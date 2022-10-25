@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <div className={colorTheme}>
             <QueryClientProvider client={queryClient}>
                 <Header colorTheme={colorTheme} setColorTheme={setColorTheme} />
-                <Component {...pageProps} />;
+                <Component {...pageProps} />
                 <ReactQueryDevtools />
             </QueryClientProvider>
         </div>
