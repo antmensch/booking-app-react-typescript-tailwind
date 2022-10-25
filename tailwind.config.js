@@ -1,10 +1,18 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config}  */
+
 module.exports = {
     content: [
         "./pages/**/*.{js,ts,jsx,tsx}",
         "./components/**/*.{js,ts,jsx,tsx}",
+        "./src/components/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
+        fontFamily: {
+            dmsans: "'DM Sans', sans-serif",
+            opensans: "'Open Sans', sans-serif",
+            poppins: "'Poppins', sans-serif",
+            roboto: "'Roboto', sans-serif",
+        },
         colors: {
             darkGray: {
                 100: "#18191B",
@@ -42,6 +50,5 @@ module.exports = {
         extend: {},
     },
     plugins: [],
+    darkMode: "class",
 };
-
-// Test line for test commit

@@ -11,7 +11,7 @@ function Header() {
                 <Link href="/">
                     <a className="flex items-center justify-around">
                         <Image src={logo} width="40px" height="40px" />
-                        <span className="ml-2">TripGuide</span>
+                        <span className="ml-2 font-dmsans">TripGuide</span>
                     </a>
                 </Link>
                 <div className="flex items-center justify-between">
