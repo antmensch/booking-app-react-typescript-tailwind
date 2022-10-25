@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Dark mode toggler styles. Label width (64px), height (24px) and other styles are defined in main component*/
+@layer utilities {
+    .darkmode-label:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 2px;
+        left: 3px;
+        background: linear-gradient(180deg, #ffcc89, #d8860b);
+        border-radius: 9999px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #darkmode-toggle {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+
+    #darkmode-toggle:checked + .darkmode-label {
+        background: #242424;
+    }
+
+    #darkmode-toggle:checked + .darkmode-label:after {
+        transform: translateX(-100%);
+        left: 61px;
+        top: 3px;
+        background: linear-gradient(180deg, #777, #3a3a3a);
+    }
+
+    .darkmode-label,
+    .darkmode-label:after {
+        transition: 0.3s ease-out;
+    }
+
+    .darkmode-label:active:after {
+        width: 25px;
+    }
+
+    .darkmode-sun,
+    .darkmode-moon {
+        position: absolute;
+        width: 18px;
+        top: 4px;
+        z-index: 100;
+        transition: 0.3s;
+    }
+
+    .darkmode-sun {
+        left: 4px;
+        fill: #fff;
+    }
+
+    .darkmode-moon {
+        left: 44px;
+        fill: #7e7e7e;
+    }
+
+    #darkmode-toggle:checked + .darkmode-label .darkmode-sun {
+        fill: #7e7e7e;
+    }
+
+    #darkmode-toggle:checked + .darkmode-label .darkmode-moon {
+        fill: #fff;
+    }
+}
