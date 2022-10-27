@@ -12,7 +12,7 @@ interface HeaderProps {
 
 function Header({ colorTheme, setColorTheme }: HeaderProps) {
     return (
-        <div className="flex w-full items-center text-xl font-bold dark:bg-darkGray-300 sm:h-20">
+        <div className="fixed top-0 left-0 flex w-full items-center text-xl font-bold dark:bg-darkGray-300 sm:h-20">
             <header className="container mx-auto flex flex-col justify-between py-2 sm:flex-row sm:py-0">
                 <Link href="/">
                     <a className="flex items-center justify-center">
