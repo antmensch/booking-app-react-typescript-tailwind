@@ -720,6 +720,7 @@
     ],
     "myuser": {
         "name": "Jonathan Due",
+        "picsrc": "https://res.cloudinary.com/dugybnapi/image/upload/v1666873285/hotel-app/users/user_ff7xqp.png",
         "location": "United State",
         "joinedAt": "05.06.2022",
         "email": "fake_email@gmail.com",
