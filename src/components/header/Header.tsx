@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import type { Dispatch, SetStateAction } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../../public/logo.svg";
 import { BsSun, BsMoon, BsArrow90DegDown } from "react-icons/bs";
 import { GoTriangleDown } from "react-icons/go";
+import { FiUser } from "react-icons/fi";
+import { RiSuitcaseLine, RiLogoutCircleLine } from "react-icons/ri";
 import useUser from "../../hooks/useUser";
 
 interface HeaderProps {
@@ -14,7 +16,14 @@ interface HeaderProps {
 
 function Header({ colorTheme, setColorTheme }: HeaderProps) {
     const { user, isLoading: userLoading } = useUser();
-    const [userMenuState, setUserMenuState] = useState("closed");
+    const [userMenuState, setUserMenuState] = useState<"open" | "closed">(
+        "closed"
+    );
+    useEffect(() => {
+        window.addEventListener("click", () => {
+            setUserMenuState("closed");
+        });
+    }, []);
     return (
         <div className="fixed top-0 left-0 flex w-full items-center text-xl font-bold dark:bg-darkGray-300 sm:h-20">
             <header className="container mx-auto flex flex-col justify-between py-2 sm:flex-row sm:py-0">
@@ -69,20 +78,68 @@ function Header({ colorTheme, setColorTheme }: HeaderProps) {
                         (userLoading ? (
                             <span className="text-xs">Loading...</span>
                         ) : (
-                            <div className="relative flex h-full w-48 cursor-pointer flex-row items-center justify-around px-2">
-                                <div className="h-8 w-8 overflow-hidden rounded-full">
-                                    <Image
-                                        src={user.picsrc}
-                                        height={32}
-                                        width={32}
-                                        objectFit="fill"
-                                        className="scale-125"
+                            <div className="relative">
+                                <div
+                                    className="flex h-full w-48 cursor-pointer flex-row items-center justify-around px-2"
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        if (userMenuState === "open")
+                                            setUserMenuState("closed");
+                                        else setUserMenuState("open");
+                                    }}
+                                >
+                                    <div className="h-8 w-8 overflow-hidden rounded-full">
+                                        <Image
+                                            src={user.picsrc}
+                                            height={32}
+                                            width={32}
+                                            objectFit="fill"
+                                            className="scale-125"
+                                        />
+                                    </div>
+                                    <div className="whitespace-nowrap font-roboto text-sm font-medium dark:text-white">
+                                        {user.name}
+                                    </div>
+                                    <GoTriangleDown
+                                        className={`cursor-pointer text-darkGray-600 dark:text-white ${
+                                            userMenuState === "open" &&
+                                            "rotate-180 transition-transform"
+                                        }`}
                                     />
                                 </div>
-                                <div className="whitespace-nowrap font-roboto text-sm font-medium dark:text-white">
-                                    {user.name}
-                                </div>
-                                <GoTriangleDown className="cursor-pointer text-darkGray-600 dark:text-white" />
+                                <ul
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                    }}
+                                    className={`text-md absolute right-0 top-12 w-48 cursor-default list-none space-y-4 overflow-hidden rounded-2xl bg-white p-4 font-dmsans text-sm font-medium text-darkGray-400 opacity-100 shadow-md transition-all dark:bg-darkGray-400 dark:text-white ${
+                                        userMenuState === "closed" && "h-0 py-0"
+                                    }`}
+                                >
+                                    <li className="hover:text-lightGray-1 cursor-pointer transition">
+                                        <Link href={"/"}>
+                                            <a>
+                                                <FiUser className="text-lightGray-8 mr-3 inline-block" />
+                                                <span>My Profile</span>
+                                            </a>
+                                        </Link>
+                                    </li>
+
+                                    <li className="hover:text-lightGray-1 cursor-pointer transition">
+                                        <Link href={"/"}>
+                                            <a>
+                                                <RiSuitcaseLine className="text-lightGray-8 mr-3 inline-block" />
+                                                <span>Bookings</span>
+                                            </a>
+                                        </Link>
+                                    </li>
+
+                                    <li className="hover:text-lightGray-1 cursor-pointer transition">
+                                        <a>
+                                            <RiLogoutCircleLine className="text-lightGray-8 mr-3 inline-block" />
+                                            <span>Sign Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         ))}
                 </div>
