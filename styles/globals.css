@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 /* Dark mode toggler styles. Label width (64px), height (24px) and other styles are defined in main component*/
+
 @layer utilities {
     .darkmode-label:after {
         content: "";

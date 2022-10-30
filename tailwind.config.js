@@ -47,7 +47,18 @@ module.exports = {
             starGold: "#FFD166",
             modalBg: "#36363696",
         },
-        extend: {},
+        extend: {
+            gridTemplateColumns: {
+                "best-place": "repeat(8, 250px)",
+            },
+            gridTemplateRows: {
+                "12-40": "repeat(12, 40px)",
+                "featured-6": "280px 410px 410px 280px 280px",
+            },
+            gridRow: {
+                "span-7": "span 7 / span 7",
+            },
+        },
     },
     plugins: [],
     darkMode: "class",

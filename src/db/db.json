@@ -2,67 +2,87 @@
     "best-place": [
         {
             "country": "China",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-manuel-joseph-19872_qclbdo_xtuqyq.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-manuel-joseph-19872_qclbdo_xtuqyq.jpg",
+            "destinations": 86
         },
         {
             "country": "India",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-darshak-pandya-574313_ykrw9c_uyprf9.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-darshak-pandya-574313_ykrw9c_uyprf9.jpg",
+            "destinations": 98
         },
         {
             "country": "Maldivies",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-asad-photo-maldives-1483053_ic6pbi_wezb3s.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-asad-photo-maldives-1483053_ic6pbi_wezb3s.jpg",
+            "destinations": 132
         },
         {
             "country": "Israel",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-mauricio-artieda-610533_hxpgok_xh0jak.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-mauricio-artieda-610533_hxpgok_xh0jak.jpg",
+            "destinations": 72
         },
         {
             "country": "France",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-pixabay-2363_pqxtxj_xemtvd.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-pixabay-2363_pqxtxj_xemtvd.jpg",
+            "destinations": 201
         },
         {
             "country": "Morocco",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359667/hotel-app/best-place/pexels-pixabay-273935_xseyqa_afwne7.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359667/hotel-app/best-place/pexels-pixabay-273935_xseyqa_afwne7.jpg",
+            "destinations": 66
         },
         {
             "country": "Brazil",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-florencia-potter-351283_u9r32s_clgznt.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-florencia-potter-351283_u9r32s_clgznt.jpg",
+            "destinations": 139
         },
         {
             "country": "Egypt",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-david-mceachan-71241_ojwpwd_hakrvn.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-david-mceachan-71241_ojwpwd_hakrvn.jpg",
+            "destinations": 48
         }
     ],
-    "featured-destnations": [
+    "featured-destinations": [
         {
             "city": "Barcelona",
             "country": "Spain",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-aleksandar-pasaric-1388030_jalzsm_al2c9r.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-aleksandar-pasaric-1388030_jalzsm_al2c9r.jpg",
+            "rating": 4.1,
+            "activities": 250
         },
         {
             "city": "Sydney ",
             "country": "Australia",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-patrick-mclachlan-995765_nakswl_bmgkrt.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-patrick-mclachlan-995765_nakswl_bmgkrt.jpg",
+            "rating": 4.5,
+            "activities": 124
         },
         {
             "city": "London",
             "country": "UK",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-chris-schippers-427679_rqchvp_vueawc.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-chris-schippers-427679_rqchvp_vueawc.jpg",
+            "rating": 4.0,
+            "activities": 299
         },
         {
             "city": "Paris",
             "country": "France",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-chris-molloy-1308940_vecke4_lvdi33.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-chris-molloy-1308940_vecke4_lvdi33.jpg",
+            "rating": 4.2,
+            "activities": 179
         },
         {
             "city": "Tokyo",
             "country": "Japan",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528928/hotel-app/featured-destinations/pexels-aleksandar-pasaric-2506923_szxh0t_qmnszk.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528928/hotel-app/featured-destinations/pexels-aleksandar-pasaric-2506923_szxh0t_qmnszk.jpg",
+            "rating": 4.8,
+            "activities": 160
         },
         {
             "city": "Hanoi",
             "country": "Vietnam",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528928/hotel-app/featured-destinations/pexels-huy-phan-1437618_li5ydp_itlkoe.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528928/hotel-app/featured-destinations/pexels-huy-phan-1437618_li5ydp_itlkoe.jpg",
+            "rating": 4.5,
+            "activities": 210
         }
     ],
     "top-tour": [
