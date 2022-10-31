@@ -5,6 +5,7 @@ import Footer from "../src/components/footer/Footer";
 import AllBestPlaces from "../src/components/home/best-place/AllBestPlaces";
 import FeaturedDestinationCard from "../src/components/home/featured-destinations/FeaturedDestinationCard";
 import { useFeaturedDestinations } from "../src/components/home/featured-destinations/useFeaturedDestinations";
+import TopTourSection from "../src/components/home/top-tour/TopTourSection";
 
 const Home: NextPage = () => {
     const {
@@ -57,7 +58,7 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                {/* TODO: Featured Destinations Section */}
+                {/* Featured Destinations Section */}
 
                 <section className="bg-lightGray-700 pt-16 dark:bg-darkGray-200">
                     <div className="container mx-auto">
@@ -67,10 +68,11 @@ const Home: NextPage = () => {
                         <h4 className="mt-2 py-2 text-center text-sm leading-6 text-lightGray-100 dark:text-lightGray-300 md:w-1/2 md:text-left md:text-base">
                             Popular destinations open to visitors from Indonesia
                         </h4>
-                        {featuredDestinationsIsLoading ? (
+                        {featuredDestinationsIsLoading ||
+                        featuredDestinationsIsError ? (
                             <div>Loading...</div>
                         ) : (
-                            <div className="grid grid-rows-featured-6 gap-4 py-4 px-4 md:grid-flow-row md:grid-cols-8 md:grid-rows-12-40">
+                            <div className="grid grid-rows-featured-6 gap-4 py-4 px-4 md:grid-flow-row md:grid-cols-8 md:grid-rows-12-40 md:px-0">
                                 <div className="md:col-span-6 md:row-span-5">
                                     <FeaturedDestinationCard
                                         img={featuredDestinations[0].img}
@@ -154,7 +156,19 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                {/* TODO: Top Tour Section */}
+                {/* Top Tour Section */}
+
+                <section className="bg-lightGray-700 py-4 pt-16 dark:bg-darkGray-200">
+                    <div className="container mx-auto">
+                        <h2 className="w-full text-center text-3xl font-bold text-darkGray-400 dark:text-white md:text-left md:text-5xl">
+                            Top Tour
+                        </h2>
+                        <h4 className="mt-2 py-2 text-center text-sm leading-6 text-lightGray-100 dark:text-lightGray-300 md:w-1/2 md:text-left md:text-base">
+                            Keep calm & Travel on
+                        </h4>
+                        <TopTourSection />
+                    </div>
+                </section>
 
                 {/* TODO: Explore the World Section */}
 

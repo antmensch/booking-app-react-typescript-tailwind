@@ -88,15 +88,21 @@
     "top-tour": [
         {
             "country": "Japan",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-belle-co-402028_ipui4w_ybe88g.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-belle-co-402028_ipui4w_ybe88g.jpg",
+            "place": "Japan",
+            "placesQty": 10
         },
         {
             "country": "Bali",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-kimberly-mcneilus-2480626_eb5zha_nmzi4h.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-kimberly-mcneilus-2480626_eb5zha_nmzi4h.jpg",
+            "place": "Indonesia",
+            "placesQty": 7
         },
         {
             "country": "Spain",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-samuel-sweet-6145647_hwigz4_elkxps.jpg"
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-samuel-sweet-6145647_hwigz4_elkxps.jpg",
+            "place": "Barcelona",
+            "placesQty": 19
         }
     ],
     "explore-world": [
