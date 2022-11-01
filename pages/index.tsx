@@ -3,9 +3,11 @@ import Head from "next/head";
 import Image from "next/image";
 import Footer from "../src/components/footer/Footer";
 import AllBestPlaces from "../src/components/home/best-place/AllBestPlaces";
+import ExploreWorldSection from "../src/components/home/explore-world/ExploreWorldSection";
 import FeaturedDestinationCard from "../src/components/home/featured-destinations/FeaturedDestinationCard";
 import { useFeaturedDestinations } from "../src/components/home/featured-destinations/useFeaturedDestinations";
 import TopTourSection from "../src/components/home/top-tour/TopTourSection";
+import TrendingCitiesSection from "../src/components/home/trending-cities/TrendingCitiesSection";
 
 const Home: NextPage = () => {
     const {
@@ -44,10 +46,10 @@ const Home: NextPage = () => {
                 </section>
 
                 {/* Best Places Section */}
-                <section className="bg-lightGray-700 pt-16 dark:bg-darkGray-200">
+                <section className="bg-lightGray-700 pt-8 dark:bg-darkGray-200">
                     <div className="container mx-auto">
                         <h2 className="mx-auto w-full text-center text-3xl font-bold text-darkGray-400 dark:text-white md:text-5xl">
-                            Search a best place in the world
+                            Search the best place in the world
                         </h2>
                         <h4 className="mx-auto mt-2 w-7/12 py-2 text-center text-sm leading-6 text-lightGray-100 dark:text-lightGray-300 md:w-1/2 md:text-base">
                             Whether you’re looking for places for a vacation. We
@@ -60,7 +62,7 @@ const Home: NextPage = () => {
 
                 {/* Featured Destinations Section */}
 
-                <section className="bg-lightGray-700 pt-16 dark:bg-darkGray-200">
+                <section className="bg-lightGray-700 pt-4 dark:bg-darkGray-200">
                     <div className="container mx-auto">
                         <h2 className="w-full text-center text-3xl font-bold text-darkGray-400 dark:text-white md:text-left md:text-5xl">
                             Featured Destinations
@@ -158,7 +160,7 @@ const Home: NextPage = () => {
 
                 {/* Top Tour Section */}
 
-                <section className="bg-lightGray-700 py-4 pt-16 dark:bg-darkGray-200">
+                <section className="bg-lightGray-700 py-4 pt-4 dark:bg-darkGray-200">
                     <div className="container mx-auto">
                         <h2 className="w-full text-center text-3xl font-bold text-darkGray-400 dark:text-white md:text-left md:text-5xl">
                             Top Tour
@@ -170,9 +172,31 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                {/* TODO: Explore the World Section */}
+                {/* Explore the World Section */}
+                <section className="bg-lightGray-700 py-4 pt-4 dark:bg-darkGray-200">
+                    <div className="container mx-auto">
+                        <h2 className="w-full text-center text-3xl font-bold text-darkGray-400 dark:text-white md:text-left md:text-5xl">
+                            Explore The World
+                        </h2>
+                        <h4 className="mt-2 py-2 text-center text-sm leading-6 text-lightGray-100 dark:text-lightGray-300 md:w-1/2 md:text-left md:text-base">
+                            10,788 Beautiful Places to go to
+                        </h4>
+                        <ExploreWorldSection />
+                    </div>
+                </section>
 
-                {/* TODO: Trending Cities Section */}
+                {/* Trending Cities Section */}
+                <section className="bg-lightGray-700 py-4 pt-4 dark:bg-darkGray-200">
+                    <div className="container mx-auto">
+                        <h2 className="w-full text-center text-3xl font-bold text-darkGray-400 dark:text-white md:text-left md:text-5xl">
+                            Trending Cities
+                        </h2>
+                        <h4 className="mt-2 py-2 text-center text-sm leading-6 text-lightGray-100 dark:text-lightGray-300 md:w-1/2 md:text-left md:text-base">
+                            The most searched for cities on TripGuide
+                        </h4>
+                        <TrendingCitiesSection />
+                    </div>
+                </section>
 
                 {/* TODO: CTA section */}
 

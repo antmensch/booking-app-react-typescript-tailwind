@@ -42,7 +42,7 @@ function Header({ colorTheme, setColorTheme }: HeaderProps) {
                     </a>
                 </Link>
                 {/* Night mode toggle */}
-                <div className="mt-1 flex flex-col-reverse items-center justify-center sm:mt-0 sm:flex-row sm:justify-between">
+                <div className="mt-1 flex items-center justify-center sm:mt-0 sm:flex-row sm:justify-between">
                     <div className="mr-4 flex items-center justify-center">
                         <input
                             type="checkbox"

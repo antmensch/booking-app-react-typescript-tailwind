@@ -111,7 +111,7 @@
             "city": "Marmaris",
             "country": "Turkey",
             "price": 220,
-            "distance-from-city-center": "1.2km",
+            "distance-from-city-center": "1.2 km",
             "rating": 4.7,
             "amount-of-rating": 150,
             "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-binyamin-mellish-106399_icqiwy_vddtbg.jpg"
@@ -121,7 +121,7 @@
             "city": "Paris",
             "country": "France",
             "price": 110,
-            "distance-from-city-center": "3km",
+            "distance-from-city-center": "3 km",
             "rating": 5,
             "amount-of-rating": 150,
             "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-binyamin-mellish-1396122_prtue5_uhtvwj.jpg"
@@ -131,7 +131,7 @@
             "city": "Madrid",
             "country": "Spain",
             "price": 300,
-            "distance-from-city-center": "0.6km",
+            "distance-from-city-center": "0.6 km",
             "rating": 4.5,
             "amount-of-rating": 150,
             "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-binyamin-mellish-186077_cbirbs_ncjpt0.jpg"
@@ -141,7 +141,7 @@
             "city": "Jerusalem",
             "country": "Israel",
             "price": 400,
-            "distance-from-city-center": "0.1km",
+            "distance-from-city-center": "0.1 km",
             "rating": 4.3,
             "amount-of-rating": 150,
             "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-expect-best-323780_dk5hki_hrlmks.jpg"
