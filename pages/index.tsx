@@ -16,13 +16,13 @@ const Home: NextPage = () => {
         isError: featuredDestinationsIsError,
     } = useFeaturedDestinations();
     return (
-        <div className="flex min-h-screen py-2">
+        <div className="flex min-h-screen">
             <Head>
                 <title>Hotel booking app</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className=" h-auto w-full">
+            <main className="h-auto w-full">
                 <section className="relative h-[650px] w-full">
                     <Image
                         src={
@@ -46,9 +46,9 @@ const Home: NextPage = () => {
                 </section>
 
                 {/* Best Places Section */}
-                <section className="bg-lightGray-700 pt-8 dark:bg-darkGray-200">
+                <section className="bg-lightGray-700 pt-10 dark:bg-darkGray-200">
                     <div className="container mx-auto">
-                        <h2 className="mx-auto w-full text-center text-3xl font-bold text-darkGray-400 dark:text-white md:text-5xl">
+                        <h2 className="mx-auto w-full px-16 text-center text-3xl font-bold text-darkGray-400 dark:text-white md:px-0 md:text-5xl">
                             Search the best place in the world
                         </h2>
                         <h4 className="mx-auto mt-2 w-7/12 py-2 text-center text-sm leading-6 text-lightGray-100 dark:text-lightGray-300 md:w-1/2 md:text-base">
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
 
                 {/* Featured Destinations Section */}
 
-                <section className="bg-lightGray-700 pt-4 dark:bg-darkGray-200">
+                <section className="bg-lightGray-700 pt-10 dark:bg-darkGray-200">
                     <div className="container mx-auto">
                         <h2 className="w-full text-center text-3xl font-bold text-darkGray-400 dark:text-white md:text-left md:text-5xl">
                             Featured Destinations
@@ -160,7 +160,7 @@ const Home: NextPage = () => {
 
                 {/* Top Tour Section */}
 
-                <section className="bg-lightGray-700 py-4 pt-4 dark:bg-darkGray-200">
+                <section className="bg-lightGray-700 py-4 pt-10 dark:bg-darkGray-200">
                     <div className="container mx-auto">
                         <h2 className="w-full text-center text-3xl font-bold text-darkGray-400 dark:text-white md:text-left md:text-5xl">
                             Top Tour
@@ -173,7 +173,7 @@ const Home: NextPage = () => {
                 </section>
 
                 {/* Explore the World Section */}
-                <section className="bg-lightGray-700 py-4 pt-4 dark:bg-darkGray-200">
+                <section className="bg-lightGray-700 pb-20 pt-10 dark:bg-darkGray-200">
                     <div className="container mx-auto">
                         <h2 className="w-full text-center text-3xl font-bold text-darkGray-400 dark:text-white md:text-left md:text-5xl">
                             Explore The World
@@ -186,7 +186,7 @@ const Home: NextPage = () => {
                 </section>
 
                 {/* Trending Cities Section */}
-                <section className="bg-lightGray-700 py-4 pt-4 dark:bg-darkGray-200">
+                <section className="bg-lightGray-800 pt-10 dark:bg-darkGray-100 md:pb-20">
                     <div className="container mx-auto">
                         <h2 className="w-full text-center text-3xl font-bold text-darkGray-400 dark:text-white md:text-left md:text-5xl">
                             Trending Cities
@@ -198,7 +198,39 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                {/* TODO: CTA section */}
+                {/* CTA section */}
+                <section className="bg-lightGray-700 dark:bg-darkGray-200">
+                    <div className="containter mx-auto px-6 dark:bg-darkGray-200">
+                        <div className="container mx-auto max-w-6xl ">
+                            <div className="cta relative top-16 flex flex-col items-center justify-between rounded-2xl bg-blue-accent py-6 px-20 md:flex-row md:py-12">
+                                {/* Text */}
+                                <div className="space-y-4">
+                                    <h2 className="font-poppins text-4xl font-extrabold tracking-wide text-white">
+                                        Get our pro offers
+                                    </h2>
+                                    <p className="font-light text-white">
+                                        Create a visual identity for your
+                                        company, and an overall brand
+                                    </p>
+                                </div>
+
+                                <form className="mt-3 flex w-2/3 flex-col md:mt-0 md:w-1/3 md:flex-row">
+                                    <input
+                                        className="md:text-darkGray-1 w-full rounded-sm py-4 text-center text-xs focus:outline-none md:w-full md:pl-6 md:pr-32 md:text-left"
+                                        type="email"
+                                        placeholder="Type your email here"
+                                    />
+                                    <button
+                                        className="active:bg-darkGray-2 mt-3 rounded-sm bg-darkGray-200 py-3 text-xs text-white hover:bg-darkGray-100 focus:outline-none md:my-1 md:-ml-28 md:px-6"
+                                        onClick={(e) => e.preventDefault()}
+                                    >
+                                        Subscribe
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <Footer />
             </main>

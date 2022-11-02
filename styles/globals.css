@@ -4,6 +4,15 @@
 
 /* Dark mode toggler styles. Label width (64px), height (24px) and other styles are defined in main component*/
 
+@layer components {
+    .cta {
+        background-image: url("../src/img/cta-bg-1.png"),
+            url("../src/img/cta-bg-2.png"), url("../src/img/cta-bg-3.png");
+        background-repeat: no-repeat;
+        background-position: 2% 200%, 50% 470%, 90% -200%;
+    }
+}
+
 @layer utilities {
     .darkmode-label:after {
         content: "";

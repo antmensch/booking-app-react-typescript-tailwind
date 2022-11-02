@@ -15,8 +15,8 @@ function ExploreWorldCard({
     img,
 }: ExploreWorld) {
     return (
-        <div className="w-72 space-y-2 rounded-xl bg-white p-3 pb-6 dark:bg-darkGray-300">
-            <div className="relative mx-auto h-36 w-60 overflow-hidden rounded-xl">
+        <div className="w-72 space-y-4 rounded-xl bg-white p-3 pb-6 shadow-md dark:bg-darkGray-300">
+            <div className="relative mx-auto mb-5 h-36 w-60 overflow-hidden rounded-xl">
                 <Image src={img} layout="fill" objectFit="cover" />
             </div>
             <div className="flex flex-row items-center space-x-1">
@@ -26,14 +26,16 @@ function ExploreWorldCard({
                 </span>
                 <span className="text-sm text-lightGray-100 dark:text-lightGray-300">{`(${votesNumber})`}</span>
             </div>
-            <div className="flex items-center justify-between">
-                <h5 className=" text-xl font-medium text-darkGray-600 dark:text-lightGray-600">
-                    {title}
-                </h5>
-                <div className=" rounded-md bg-blue-accent px-2 py-1 text-base font-bold text-white dark:bg-blue-transparent dark:text-blue-accent">{`$${price}`}</div>
+            <div>
+                <div className="flex items-center justify-between">
+                    <h5 className=" text-xl font-medium text-darkGray-600 dark:text-lightGray-600">
+                        {title}
+                    </h5>
+                    <div className=" rounded-md bg-blue-accent px-2 py-1 text-base font-bold text-white dark:bg-blue-transparent dark:text-blue-accent">{`$${price}`}</div>
+                </div>
+                <div className="text-sm font-medium text-lightGray-100">{`${distance} to Town Center`}</div>
             </div>
 
-            <div className="text-sm font-medium text-lightGray-100">{`${distance} to Town Center`}</div>
             <div className="flex flex-row items-center ">
                 <IoLocationOutline className="text-xl text-lightGray-300" />
                 <span className="text-sm font-normal text-lightGray-100 dark:text-lightGray-300">

@@ -4,7 +4,7 @@ import { BestPlace } from "./useBestPlace";
 
 function BestPlaceCard({ img, country, destinations }: BestPlace) {
     return (
-        <div className="cursor-pointer rounded-lg border-2 border-solid border-lightGray-400 p-4 hover:scale-105 hover:bg-white hover:transition-all dark:border-darkGray-600 dark:hover:bg-darkGray-300 md:p-8">
+        <div className="cursor-pointer rounded-lg border-2 border-solid border-lightGray-400 p-4 shadow-md hover:scale-110 hover:bg-white hover:transition-all dark:border-darkGray-600 dark:hover:bg-darkGray-300 md:p-8">
             <Image
                 src={img}
                 width="80px"

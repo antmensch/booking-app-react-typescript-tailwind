@@ -6,7 +6,7 @@ function TopTourSection() {
     const { topTour = [], isError, isLoading } = useTopTour();
     if (isLoading) return <div>Loading...</div>;
     return (
-        <div className="space flex flex-col space-y-4 px-4 md:flex-row md:space-y-0 md:space-x-7 md:px-0">
+        <div className="space flex flex-col space-y-4 px-4 py-3 md:flex-row md:space-y-0 md:space-x-7 md:px-2">
             {topTour.map((tour) => (
                 <TopTourCard
                     img={tour.img}

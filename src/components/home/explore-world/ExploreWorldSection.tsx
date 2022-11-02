@@ -5,7 +5,7 @@ function ExploreWorldSection() {
     const { exploreWorld = [], isLoading, isError } = useExploreWorld();
 
     return (
-        <div className="flex flex-row flex-nowrap justify-between space-x-4 overflow-scroll">
+        <div className="flex flex-row flex-nowrap justify-between space-x-4 overflow-scroll px-2 py-3">
             {exploreWorld.map((card: any) => (
                 <ExploreWorldCard
                     key={card.title.concat(card.country)}

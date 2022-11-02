@@ -127,27 +127,27 @@ function Header({ colorTheme, setColorTheme }: HeaderProps) {
                                         userMenuState === "closed" && "h-0 py-0"
                                     }`}
                                 >
-                                    <li className="hover:text-lightGray-1 cursor-pointer transition">
+                                    <li className="cursor-pointer transition hover:text-lightGray-100">
                                         <Link href={"/"}>
                                             <a>
-                                                <FiUser className="text-lightGray-8 mr-3 inline-block" />
+                                                <FiUser className="mr-3 inline-block text-darkGray-700 dark:text-lightGray-800" />
                                                 <span>My Profile</span>
                                             </a>
                                         </Link>
                                     </li>
 
-                                    <li className="hover:text-lightGray-1 cursor-pointer transition">
+                                    <li className="cursor-pointer transition hover:text-lightGray-100">
                                         <Link href={"/"}>
                                             <a>
-                                                <RiSuitcaseLine className="text-lightGray-8 mr-3 inline-block" />
+                                                <RiSuitcaseLine className="mr-3 inline-block text-darkGray-700 dark:text-lightGray-800" />
                                                 <span>Bookings</span>
                                             </a>
                                         </Link>
                                     </li>
 
-                                    <li className="hover:text-lightGray-1 cursor-pointer transition">
+                                    <li className="cursor-pointer transition hover:text-lightGray-100">
                                         <a>
-                                            <RiLogoutCircleLine className="text-lightGray-8 mr-3 inline-block" />
+                                            <RiLogoutCircleLine className="mr-3 inline-block text-darkGray-700 dark:text-lightGray-800" />
                                             <span>Sign Out</span>
                                         </a>
                                     </li>
