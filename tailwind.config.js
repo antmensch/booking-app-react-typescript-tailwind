@@ -58,6 +58,12 @@ module.exports = {
             gridRow: {
                 "span-7": "span 7 / span 7",
             },
+            fontSize: {
+                "2xs": "10px",
+            },
+            borderWidth: {
+                1: "1px",
+            },
         },
     },
     plugins: [],

@@ -42,7 +42,7 @@ function Header({ colorTheme, setColorTheme }: HeaderProps) {
                     </a>
                 </Link>
                 {/* Night mode toggle */}
-                <div className="mt-1 flex items-center justify-center sm:mt-0 sm:flex-row sm:justify-between">
+                <div className="mt-4 mb-2 flex items-center justify-center sm:mt-0 sm:flex-row sm:justify-between">
                     <div className="mr-4 flex items-center justify-center">
                         <input
                             type="checkbox"
@@ -83,7 +83,7 @@ function Header({ colorTheme, setColorTheme }: HeaderProps) {
                                 Signup
                             </button>
                         </div>
-                    ) &&
+                    ) ||
                         // User menu rendered if the user is logged in
                         (userLoading ? (
                             <span className="text-xs">Loading...</span>
