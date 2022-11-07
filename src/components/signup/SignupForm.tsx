@@ -23,7 +23,7 @@ function SignupForm() {
     }
 
     return (
-        <form className="mx-auto h-auto min-h-min w-full space-y-1 overflow-scroll rounded-3xl bg-white px-11 py-7 dark:bg-darkGray-200 sm:w-4/5 sm:max-w-lg md:space-y-2">
+        <form className="mx-auto h-auto min-h-min w-full space-y-1 overflow-scroll rounded-3xl bg-white px-11 py-7 dark:bg-darkGray-200 md:space-y-2">
             <h2 className="text-center text-2xl font-bold text-darkGray-200 dark:text-lightGray-400 md:text-4xl">
                 Let's Go
             </h2>

@@ -9,7 +9,7 @@ function LoginForm() {
     const [loginData, setLoginData] = useState({ email: "", password: "" });
     console.log(loginData);
     return (
-        <form className="mx-auto h-auto min-h-min w-full space-y-3 overflow-scroll rounded-3xl bg-white px-11 py-7 dark:bg-darkGray-200 sm:w-4/5 sm:max-w-lg">
+        <form className="mx-auto h-auto min-h-min w-full space-y-3 overflow-scroll rounded-3xl bg-white px-11 py-7 dark:bg-darkGray-200">
             <h2 className="text-center text-2xl font-bold text-darkGray-200 dark:text-lightGray-400 md:text-4xl">
                 Welcome Back!
             </h2>

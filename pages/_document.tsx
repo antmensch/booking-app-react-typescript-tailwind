@@ -18,6 +18,7 @@ export default function Document() {
             <body className="mx-auto w-full font-dmsans">
                 <Main />
                 <NextScript />
+                <div id="modal-root"></div>
             </body>
         </Html>
     );

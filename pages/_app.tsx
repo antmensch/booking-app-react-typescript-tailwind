@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     const { colorTheme, setColorTheme } = useColorTheme();
     return (
         <div className={colorTheme}>
+            <div id="modal-root" className={colorTheme}></div>
             <QueryClientProvider client={queryClient}>
                 <Header colorTheme={colorTheme} setColorTheme={setColorTheme} />
                 <Component {...pageProps} />

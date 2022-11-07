@@ -8,6 +8,10 @@ import { GoTriangleDown } from "react-icons/go";
 import { FiUser } from "react-icons/fi";
 import { RiSuitcaseLine, RiLogoutCircleLine } from "react-icons/ri";
 import useUser from "../../hooks/useUser";
+import LoginModal from "../login/LoginModal";
+import SignupModal from "../signup/SignupModal";
+import { useModal } from "../../hooks/useModal";
+import { useRouter } from "next/router";
 
 interface HeaderProps {
     colorTheme: "light" | "dark";
@@ -15,6 +19,7 @@ interface HeaderProps {
 }
 
 function Header({ colorTheme, setColorTheme }: HeaderProps) {
+    const router = useRouter();
     // fetching user data using the useUser custom hook
     const { user, isLoading: userLoading } = useUser();
 
@@ -23,15 +28,48 @@ function Header({ colorTheme, setColorTheme }: HeaderProps) {
         "closed"
     );
 
+    function handleLoginClick() {
+        if (loginModalState === "closed") setLoginModalState("open");
+        else if (loginModalState === "open") setLoginModalState("closed");
+    }
+
+    function handleSignupClick() {
+        if (loginModalState === "closed") setSignupModalState("open");
+        else if (signupModalState === "open") setSignupModalState("closed");
+    }
+
+    const { modalState: loginModalState, setModalState: setLoginModalState } =
+        useModal();
+
+    const { modalState: signupModalState, setModalState: setSignupModalState } =
+        useModal();
+
     // useEffect adding event listener to the window so that user menu closes when the window is clicked
     useEffect(() => {
         window.addEventListener("click", () => {
             setUserMenuState("closed");
         });
     }, []);
+
+    console.log(loginModalState);
+
     return (
         <div className="fixed top-0 left-0 z-30 flex w-full items-center bg-white text-xl font-bold dark:bg-darkGray-300 sm:h-20">
             <header className="container mx-auto flex flex-col justify-between py-2 sm:flex-row sm:py-0">
+                {/* Login Modal rendering */}
+                {loginModalState === "open" && (
+                    <LoginModal
+                        modalState={loginModalState}
+                        setModalState={setLoginModalState}
+                    />
+                )}
+                {/* Signup Modal rendering */}
+                {signupModalState === "open" && (
+                    <SignupModal
+                        modalState={signupModalState}
+                        setModalState={setSignupModalState}
+                    />
+                )}
                 {/* Logo */}
                 <Link href="/">
                     <a className="flex items-center justify-center">
@@ -63,27 +101,24 @@ function Header({ colorTheme, setColorTheme }: HeaderProps) {
                         </label>
                     </div>
                     {/* TODO: Update when auth is implemented */}
-                    {(
-                        // Login and Signup buttons
-                        <div>
-                            <button
-                                onClick={() =>
-                                    console.log("login button clicked")
-                                }
-                                className="ml-4 px-4 py-2 font-bold dark:text-white"
-                            >
-                                Login
-                            </button>
-                            <button
-                                onClick={() =>
-                                    console.log("signup button clicked")
-                                }
-                                className="ml-4 rounded-xl bg-blue-accent px-4 py-2 font-medium text-white hover:bg-blue-dark"
-                            >
-                                Signup
-                            </button>
-                        </div>
-                    ) ||
+                    {router.pathname.includes("login") ||
+                        router.pathname.includes("signup") || (
+                            // Login and Signup buttons
+                            <div>
+                                <button
+                                    onClick={handleLoginClick}
+                                    className="ml-4 px-4 py-2 font-bold dark:text-white"
+                                >
+                                    Login
+                                </button>
+                                <button
+                                    onClick={handleSignupClick}
+                                    className="ml-4 rounded-xl bg-blue-accent px-4 py-2 font-medium text-white hover:bg-blue-dark"
+                                >
+                                    Signup
+                                </button>
+                            </div>
+                        ) ||
                         // User menu rendered if the user is logged in
                         (userLoading ? (
                             <span className="text-xs">Loading...</span>

@@ -5,8 +5,15 @@ export default function useColorTheme() {
 
     useEffect(() => {
         const storedColorTheme = localStorage.getItem("colorTheme") || "light";
+
         if (storedColorTheme) setTheme(storedColorTheme as "dark" | "light");
     }, []);
+
+    useEffect(() => {
+        const html = document.getElementsByTagName("html")[0];
+        if (colorTheme === "dark") html.style.backgroundColor = "#23262F";
+        else html.style.backgroundColor = "#fafafa";
+    }, [colorTheme]);
 
     const setColorTheme = (theme: "dark" | "light") => {
         setTheme(theme);
