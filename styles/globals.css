@@ -43,7 +43,7 @@
     #darkmode-toggle:checked + .darkmode-label:after {
         transform: translateX(-100%);
         left: 61px;
-        top: 4px;
+        top: 3px;
         background: linear-gradient(180deg, #777, #3a3a3a);
     }
 
