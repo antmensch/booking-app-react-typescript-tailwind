@@ -1,28 +1,41 @@
 import { useState } from "react";
 import Link from "next/link";
 import { BsGoogle } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaGithub } from "react-icons/fa";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+import { signIn } from "next-auth/react";
 
 function LoginForm() {
     const [passVisible, setPassVisible] = useState(true);
     const [loginData, setLoginData] = useState({ email: "", password: "" });
-    console.log(loginData);
+
     return (
         <form className="mx-auto h-auto min-h-min w-full space-y-3 overflow-scroll rounded-3xl bg-white px-11 py-7 dark:bg-darkGray-200">
             <h2 className="text-center text-2xl font-bold text-darkGray-200 dark:text-lightGray-400 md:text-4xl">
                 Welcome Back!
             </h2>
             <div className="flex flex-row justify-between">
-                <button className="text-md flex w-full items-center justify-center rounded-lg bg-blue-accent py-3 text-white hover:bg-blue-dark dark:text-lightGray-400 md:text-xl">
+                <button
+                    className="text-md flex w-full items-center justify-center rounded-lg bg-blue-accent py-3 text-white hover:bg-blue-dark dark:text-lightGray-400 md:text-xl"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        signIn("google");
+                    }}
+                >
                     <BsGoogle className="text-lg md:text-2xl" />
                     <span className="ml-3">
                         <span className="hidden sm:inline">Sign in with</span>
                         <span> Google</span>
                     </span>
                 </button>
-                <button className="ml-3 flex w-24 items-center justify-center rounded-lg bg-darkGray-600 text-lg text-white hover:bg-darkGray-300 dark:text-lightGray-400">
-                    <FaFacebookF />
+                <button
+                    className="ml-3 flex w-24 items-center justify-center rounded-lg bg-darkGray-600 text-2xl text-white hover:bg-darkGray-300 dark:text-lightGray-400"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        signIn("github");
+                    }}
+                >
+                    <FaGithub />
                 </button>
             </div>
             <div className="flex flex-row items-center justify-between px-14 text-lightGray-100">

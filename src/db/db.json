@@ -750,6 +750,7 @@
         "location": "United State",
         "joinedAt": "05.06.2022",
         "email": "fake_email@gmail.com",
+        "password": "1111",
         "address": "2445 Crosswind Drive",
         "gender": "Male",
         "birthday": "07.12.1995"
