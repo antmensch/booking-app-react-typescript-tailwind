@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { BsGoogle } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaGithub } from "react-icons/fa";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 function SignupForm() {
@@ -35,8 +35,8 @@ function SignupForm() {
                         <span> Google</span>
                     </span>
                 </button>
-                <button className="ml-3 flex w-24 items-center justify-center rounded-lg bg-darkGray-600 text-lg text-white hover:bg-darkGray-300 dark:text-lightGray-400">
-                    <FaFacebookF />
+                <button className="ml-3 flex w-24 items-center justify-center rounded-lg bg-darkGray-600 text-2xl text-white hover:bg-darkGray-300 dark:text-lightGray-400">
+                    <FaGithub />
                 </button>
             </div>
             <div className="flex flex-row items-center justify-between px-14 text-lightGray-100">
