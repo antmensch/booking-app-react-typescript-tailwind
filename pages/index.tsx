@@ -8,13 +8,36 @@ import FeaturedDestinationCard from "../src/components/home/featured-destination
 import { useFeaturedDestinations } from "../src/components/home/featured-destinations/useFeaturedDestinations";
 import TopTourSection from "../src/components/home/top-tour/TopTourSection";
 import TrendingCitiesSection from "../src/components/home/trending-cities/TrendingCitiesSection";
+import clientPromise from "../src/utils/mongodb/mongodb";
+import type { InferGetServerSidePropsType } from "next";
 
-const Home: NextPage = () => {
+export async function getServerSideProps() {
+    try {
+        const client = await clientPromise;
+        const db = client.db("test");
+
+        return {
+            props: { isConnected: true },
+        };
+    } catch (e) {
+        console.error(e);
+
+        return {
+            props: { isConnected: false },
+        };
+    }
+}
+
+const Home = ({
+    isConnected,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
     const {
         featuredDestinations,
         isLoading: featuredDestinationsIsLoading,
         isError: featuredDestinationsIsError,
     } = useFeaturedDestinations();
+
+    console.log(isConnected);
     return (
         <div className="flex min-h-screen">
             <Head>
