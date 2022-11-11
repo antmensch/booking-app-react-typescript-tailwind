@@ -1,43 +1,95 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Footer from "../src/components/footer/Footer";
-import AllBestPlaces from "../src/components/home/best-place/AllBestPlaces";
-import ExploreWorldSection from "../src/components/home/explore-world/ExploreWorldSection";
-import FeaturedDestinationCard from "../src/components/home/featured-destinations/FeaturedDestinationCard";
-import { useFeaturedDestinations } from "../src/components/home/featured-destinations/useFeaturedDestinations";
-import TopTourSection from "../src/components/home/top-tour/TopTourSection";
-import TrendingCitiesSection from "../src/components/home/trending-cities/TrendingCitiesSection";
-import clientPromise from "../src/utils/mongodb/mongodb";
-import type { InferGetServerSidePropsType } from "next";
+import {
+    BestPlacesSection,
+    BestPlace,
+} from "../src/components/home/best-place/BestPlacesSection";
+import {
+    ExploreWorldSection,
+    ExploreWorld,
+} from "../src/components/home/explore-world/ExploreWorldSection";
+import {
+    TopTourSection,
+    TopTour,
+} from "../src/components/home/top-tour/TopTourSection";
+import {
+    TrendingCitiesSection,
+    TrendingCity,
+} from "../src/components/home/trending-cities/TrendingCitiesSection";
+import type { InferGetStaticPropsType, NextPageContext } from "next";
+import {
+    FeaturedDestinationsSection,
+    FeaturedDestination,
+} from "../src/components/home/featured-destinations/FeaturedDestinationsSection";
 
-export async function getServerSideProps() {
-    try {
-        const client = await clientPromise;
-        const db = client.db("test");
-
-        return {
-            props: { isConnected: true },
-        };
-    } catch (e) {
-        console.error(e);
-
-        return {
-            props: { isConnected: false },
-        };
+export async function getStaticProps(context: NextPageContext) {
+    async function getBestPlace() {
+        const data = await fetch("http://localhost:3030/best-place").then(
+            (result) => result.json()
+        );
+        return data;
     }
+
+    async function getFeaturedDestinations() {
+        const data = await fetch(
+            "http://localhost:3030/featured-destinations"
+        ).then((response) => response.json());
+
+        return data;
+    }
+
+    async function getTopTour() {
+        const data = await fetch("http://localhost:3030/top-tour").then(
+            (response) => response.json()
+        );
+        return data;
+    }
+
+    async function getExploreWorld() {
+        const data = await fetch("http://localhost:3030/explore-world").then(
+            (response) => response.json()
+        );
+        return data;
+    }
+
+    async function getTrendingCities() {
+        const data = await fetch(" http://localhost:3030/trending-cities").then(
+            (response) => response.json()
+        );
+
+        return data;
+    }
+
+    const featuredDestinations: FeaturedDestination[] =
+        await getFeaturedDestinations();
+
+    const bestPlace: BestPlace[] = await getBestPlace();
+
+    const topTour: TopTour[] = await getTopTour();
+
+    const exploreWorld: ExploreWorld[] = await getExploreWorld();
+
+    const trendingCities: TrendingCity[] = await getTrendingCities();
+
+    return {
+        props: {
+            bestPlace,
+            featuredDestinations,
+            topTour,
+            exploreWorld,
+            trendingCities,
+        },
+    };
 }
 
-const Home = ({
-    isConnected,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
-    const {
-        featuredDestinations,
-        isLoading: featuredDestinationsIsLoading,
-        isError: featuredDestinationsIsError,
-    } = useFeaturedDestinations();
-
-    console.log(isConnected);
+export default function Home({
+    bestPlace,
+    featuredDestinations,
+    topTour,
+    exploreWorld,
+    trendingCities,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
     return (
         <div className="flex min-h-screen">
             <Head>
@@ -79,7 +131,7 @@ const Home = ({
                             are here to Guide you about the details you need to
                             check in and ease your trips in advance
                         </h4>
-                        <AllBestPlaces />
+                        <BestPlacesSection bestPlace={bestPlace} />
                     </div>
                 </section>
 
@@ -93,91 +145,9 @@ const Home = ({
                         <h4 className="mt-2 py-2 text-center text-sm leading-6 text-lightGray-100 dark:text-lightGray-300 md:w-1/2 md:text-left md:text-base">
                             Popular destinations open to visitors from Indonesia
                         </h4>
-                        {featuredDestinationsIsLoading ||
-                        featuredDestinationsIsError ? (
-                            <div>Loading...</div>
-                        ) : (
-                            <div className="grid grid-rows-featured-6 gap-4 py-4 px-4 md:grid-flow-row md:grid-cols-8 md:grid-rows-12-40 md:px-0">
-                                <div className="md:col-span-6 md:row-span-5">
-                                    <FeaturedDestinationCard
-                                        img={featuredDestinations[0].img}
-                                        country={
-                                            featuredDestinations[0].country
-                                        }
-                                        city={featuredDestinations[0].city}
-                                        rating={featuredDestinations[0].rating}
-                                        activities={
-                                            featuredDestinations[0].activities
-                                        }
-                                    />
-                                </div>
-                                <div className="md:col-span-2 md:row-span-4">
-                                    <FeaturedDestinationCard
-                                        img={featuredDestinations[1].img}
-                                        country={
-                                            featuredDestinations[1].country
-                                        }
-                                        city={featuredDestinations[1].city}
-                                        rating={featuredDestinations[1].rating}
-                                        activities={
-                                            featuredDestinations[1].activities
-                                        }
-                                    />
-                                </div>
-                                <div className="md:col-span-2 md:row-span-4">
-                                    <FeaturedDestinationCard
-                                        img={featuredDestinations[2].img}
-                                        country={
-                                            featuredDestinations[2].country
-                                        }
-                                        city={featuredDestinations[2].city}
-                                        rating={featuredDestinations[2].rating}
-                                        activities={
-                                            featuredDestinations[2].activities
-                                        }
-                                    />
-                                </div>
-                                <div className="md:col-span-3 md:row-span-7">
-                                    <FeaturedDestinationCard
-                                        img={featuredDestinations[3].img}
-                                        country={
-                                            featuredDestinations[3].country
-                                        }
-                                        city={featuredDestinations[3].city}
-                                        rating={featuredDestinations[3].rating}
-                                        activities={
-                                            featuredDestinations[3].activities
-                                        }
-                                    />
-                                </div>
-                                <div className="md:col-span-3 md:row-span-7">
-                                    <FeaturedDestinationCard
-                                        img={featuredDestinations[4].img}
-                                        country={
-                                            featuredDestinations[4].country
-                                        }
-                                        city={featuredDestinations[4].city}
-                                        rating={featuredDestinations[4].rating}
-                                        activities={
-                                            featuredDestinations[4].activities
-                                        }
-                                    />
-                                </div>
-                                <div className="md:col-span-2 md:row-span-4">
-                                    <FeaturedDestinationCard
-                                        img={featuredDestinations[5].img}
-                                        country={
-                                            featuredDestinations[5].country
-                                        }
-                                        city={featuredDestinations[5].city}
-                                        rating={featuredDestinations[5].rating}
-                                        activities={
-                                            featuredDestinations[5].activities
-                                        }
-                                    />
-                                </div>
-                            </div>
-                        )}
+                        <FeaturedDestinationsSection
+                            featuredDestinations={featuredDestinations}
+                        />
                     </div>
                 </section>
 
@@ -191,7 +161,7 @@ const Home = ({
                         <h4 className="mt-2 py-2 text-center text-sm leading-6 text-lightGray-100 dark:text-lightGray-300 md:w-1/2 md:text-left md:text-base">
                             Keep calm & Travel on
                         </h4>
-                        <TopTourSection />
+                        <TopTourSection topTour={topTour} />
                     </div>
                 </section>
 
@@ -204,7 +174,7 @@ const Home = ({
                         <h4 className="mt-2 py-2 text-center text-sm leading-6 text-lightGray-100 dark:text-lightGray-300 md:w-1/2 md:text-left md:text-base">
                             10,788 Beautiful Places to go to
                         </h4>
-                        <ExploreWorldSection />
+                        <ExploreWorldSection exploreWorld={exploreWorld} />
                     </div>
                 </section>
 
@@ -217,7 +187,9 @@ const Home = ({
                         <h4 className="mt-2 py-2 text-center text-sm leading-6 text-lightGray-100 dark:text-lightGray-300 md:w-1/2 md:text-left md:text-base">
                             The most searched for cities on TripGuide
                         </h4>
-                        <TrendingCitiesSection />
+                        <TrendingCitiesSection
+                            trendingCities={trendingCities}
+                        />
                     </div>
                 </section>
 
@@ -259,6 +231,4 @@ const Home = ({
             </main>
         </div>
     );
-};
-
-export default Home;
+}

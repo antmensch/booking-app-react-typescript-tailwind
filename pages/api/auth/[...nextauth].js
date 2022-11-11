@@ -16,6 +16,9 @@ export const authOptions = {
         }),
     ],
     adapter: MongoDBAdapter(clientPromise),
+    session: {
+        strategy: "jwt",
+    },
 };
 
 export default NextAuth(authOptions);

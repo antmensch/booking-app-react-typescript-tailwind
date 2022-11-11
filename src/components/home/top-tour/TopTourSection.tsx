@@ -1,10 +1,13 @@
-import { useTopTour } from "./useTopTour";
 import TopTourCard from "./TopTourCard";
-import { TopTour } from "./useTopTour";
 
-function TopTourSection() {
-    const { topTour = [], isError, isLoading } = useTopTour();
-    if (isLoading) return <div>Loading...</div>;
+export interface TopTour {
+    img: string;
+    country: string;
+    place: string;
+    placesQty: number;
+}
+
+export function TopTourSection({ topTour }: { topTour: TopTour[] }) {
     return (
         <div className="space flex flex-col space-y-4 px-4 py-3 md:flex-row md:space-y-0 md:space-x-7 md:px-2">
             {topTour.map((tour) => (
@@ -19,5 +22,3 @@ function TopTourSection() {
         </div>
     );
 }
-
-export default TopTourSection;

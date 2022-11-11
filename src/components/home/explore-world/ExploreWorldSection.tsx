@@ -1,9 +1,21 @@
 import ExploreWorldCard from "./ExploreWorldCard";
-import { useExploreWorld } from "./useExploreWorld";
 
-function ExploreWorldSection() {
-    const { exploreWorld = [], isLoading, isError } = useExploreWorld();
+export interface ExploreWorld {
+    title: string;
+    city: string;
+    country: string;
+    price: number;
+    distance: string;
+    rating: number;
+    votesNumber: number;
+    img: string;
+}
 
+export function ExploreWorldSection({
+    exploreWorld,
+}: {
+    exploreWorld: ExploreWorld[];
+}) {
     return (
         <div className="flex flex-row flex-nowrap justify-between space-x-4 overflow-scroll px-2 py-3">
             {exploreWorld.map((card: any) => (
@@ -22,5 +34,3 @@ function ExploreWorldSection() {
         </div>
     );
 }
-
-export default ExploreWorldSection;

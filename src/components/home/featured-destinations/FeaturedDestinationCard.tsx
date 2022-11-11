@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { FeaturedDestination } from "./useFeaturedDestinations";
+import { FeaturedDestination } from "./FeaturedDestinationsSection";
 
 function FeaturedDestinationCard({
     img,
