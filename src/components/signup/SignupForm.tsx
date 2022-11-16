@@ -5,7 +5,7 @@ import { FaFacebookF, FaGithub } from "react-icons/fa";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 function SignupForm() {
-    const [passVisible, setPassVisible] = useState(true);
+    const [passVisible, setPassVisible] = useState(false);
     const [signupData, setSignupData] = useState({
         firstName: "",
         lastName: "",
@@ -98,9 +98,9 @@ function SignupForm() {
                         onClick={() => setPassVisible((curr) => !curr)}
                     >
                         {passVisible ? (
-                            <AiOutlineEyeInvisible />
-                        ) : (
                             <AiOutlineEye />
+                        ) : (
+                            <AiOutlineEyeInvisible />
                         )}
                     </div>
                 </div>
@@ -144,7 +144,7 @@ function SignupForm() {
             </button>
             <div className="text-center text-2xs font-normal text-darkGray-600 dark:text-lightGray-400 md:text-sm">
                 Already have an account?
-                <Link href="/login">
+                <Link href="/auth/login">
                     <a className=" text-blue-accent">Sign in</a>
                 </Link>
             </div>

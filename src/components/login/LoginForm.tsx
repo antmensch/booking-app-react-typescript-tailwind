@@ -6,7 +6,7 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { signIn } from "next-auth/react";
 
 function LoginForm() {
-    const [passVisible, setPassVisible] = useState(true);
+    const [passVisible, setPassVisible] = useState(false);
     const [loginData, setLoginData] = useState({ email: "", password: "" });
 
     return (
@@ -19,7 +19,7 @@ function LoginForm() {
                     className="text-md flex w-full items-center justify-center rounded-lg bg-blue-accent py-3 text-white hover:bg-blue-dark dark:text-lightGray-400 md:text-xl"
                     onClick={(e) => {
                         e.preventDefault();
-                        signIn("google");
+                        signIn("google", { callbackUrl: "/" });
                     }}
                 >
                     <BsGoogle className="text-lg md:text-2xl" />
@@ -32,7 +32,7 @@ function LoginForm() {
                     className="ml-3 flex w-24 items-center justify-center rounded-lg bg-darkGray-600 text-2xl text-white hover:bg-darkGray-300 dark:text-lightGray-400"
                     onClick={(e) => {
                         e.preventDefault();
-                        signIn("github");
+                        signIn("github", { callbackUrl: "/" });
                     }}
                 >
                     <FaGithub />
@@ -83,9 +83,9 @@ function LoginForm() {
                         onClick={() => setPassVisible((curr) => !curr)}
                     >
                         {passVisible ? (
-                            <AiOutlineEyeInvisible />
-                        ) : (
                             <AiOutlineEye />
+                        ) : (
+                            <AiOutlineEyeInvisible />
                         )}
                     </div>
                 </div>
@@ -96,12 +96,18 @@ function LoginForm() {
                 </Link>
             </div>
 
-            <button className="text-md w-full rounded-lg bg-blue-accent py-3 font-bold text-white hover:bg-blue-dark md:text-xl">
+            <button
+                className="text-md w-full rounded-lg bg-blue-accent py-3 font-bold text-white hover:bg-blue-dark md:text-xl"
+                onClick={(e) => {
+                    e.preventDefault();
+                    signIn("credentials", loginData);
+                }}
+            >
                 Sign in
             </button>
             <div className="text-center text-2xs font-normal text-darkGray-600 dark:text-lightGray-400 md:text-sm">
                 Don't have an account?
-                <Link href="/signup">
+                <Link href="/auth/signup">
                     <a className=" text-blue-accent">Sign up</a>
                 </Link>
             </div>

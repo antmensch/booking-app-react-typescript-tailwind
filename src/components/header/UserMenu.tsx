@@ -4,8 +4,9 @@ import Link from "next/link";
 import { GoTriangleDown } from "react-icons/go";
 import { FiUser } from "react-icons/fi";
 import { RiSuitcaseLine, RiLogoutCircleLine } from "react-icons/ri";
-import {signOut} from "next-auth/react"
+import { signOut } from "next-auth/react";
 import { User } from "../../types";
+import { FaUserCircle } from "react-icons/fa";
 
 export default function UserMenu({ user }: { user: User }) {
     const [userMenuState, setUserMenuState] = useState<"open" | "closed">(
@@ -29,7 +30,7 @@ export default function UserMenu({ user }: { user: User }) {
                 }}
             >
                 <div className="h-8 w-8 overflow-hidden rounded-full">
-                    {user.image && (
+                    {user?.image ? (
                         <Image
                             src={user.image}
                             height={32}
@@ -37,10 +38,12 @@ export default function UserMenu({ user }: { user: User }) {
                             objectFit="fill"
                             className="scale-125"
                         />
+                    ) : (
+                        <FaUserCircle className="h-8 w-8 text-lightGray-100 dark:text-lightGray-600" />
                     )}
                 </div>
                 <div className="whitespace-nowrap font-roboto text-sm font-medium dark:text-white">
-                    {user.name || ""}
+                    {user?.name || ""}
                 </div>
                 <GoTriangleDown
                     className={`cursor-pointer text-darkGray-600 dark:text-white ${

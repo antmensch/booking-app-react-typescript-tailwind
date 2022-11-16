@@ -10,7 +10,7 @@ import LoginModal from "../login/LoginModal";
 import SignupModal from "../signup/SignupModal";
 import { useModal } from "../../hooks/useModal";
 import { useRouter } from "next/router";
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import UserMenu from "./UserMenu";
 
 interface HeaderProps {
@@ -23,7 +23,6 @@ function Header({ colorTheme, setColorTheme }: HeaderProps) {
     // fetching user data using the useUser custom hook
 
     const { data: session, status } = useSession();
-
     function handleLoginClick() {
         if (loginModalState === "closed") setLoginModalState("open");
         else if (loginModalState === "open") setLoginModalState("closed");
@@ -88,7 +87,7 @@ function Header({ colorTheme, setColorTheme }: HeaderProps) {
                         </label>
                     </div>
                     {/* TODO: Update when auth is implemented */}
-                    {status == "authenticated" ? (
+                    {status == "authenticated" && session.user ? (
                         <UserMenu user={session.user} />
                     ) : (
                         router.pathname.includes("login") ||

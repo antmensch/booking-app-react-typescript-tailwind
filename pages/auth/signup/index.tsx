@@ -1,5 +1,5 @@
-import SignupForm from "../../src/components/signup/SignupForm";
-import clientPromise from "../../src/utils/mongodb/mongodb";
+import SignupForm from "../../../src/components/signup/SignupForm";
+import clientPromise from "../../../src/utils/mongodb/mongodb";
 
 export async function getServerSideProps() {
     try {
