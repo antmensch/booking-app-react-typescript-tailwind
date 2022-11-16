@@ -1,768 +1,775 @@
 {
-    "best-place": [
-        {
-            "country": "China",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-manuel-joseph-19872_qclbdo_xtuqyq.jpg",
-            "destinations": 86
+    "data": {
+        "best-place": [
+            {
+                "country": "China",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-manuel-joseph-19872_qclbdo_xtuqyq.jpg",
+                "destinations": 86
+            },
+            {
+                "country": "India",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-darshak-pandya-574313_ykrw9c_uyprf9.jpg",
+                "destinations": 98
+            },
+            {
+                "country": "Maldivies",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-asad-photo-maldives-1483053_ic6pbi_wezb3s.jpg",
+                "destinations": 132
+            },
+            {
+                "country": "Israel",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-mauricio-artieda-610533_hxpgok_xh0jak.jpg",
+                "destinations": 72
+            },
+            {
+                "country": "France",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-pixabay-2363_pqxtxj_xemtvd.jpg",
+                "destinations": 201
+            },
+            {
+                "country": "Morocco",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359667/hotel-app/best-place/pexels-pixabay-273935_xseyqa_afwne7.jpg",
+                "destinations": 66
+            },
+            {
+                "country": "Brazil",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-florencia-potter-351283_u9r32s_clgznt.jpg",
+                "destinations": 139
+            },
+            {
+                "country": "Egypt",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-david-mceachan-71241_ojwpwd_hakrvn.jpg",
+                "destinations": 48
+            }
+        ],
+        "featured-destinations": [
+            {
+                "city": "Barcelona",
+                "country": "Spain",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-aleksandar-pasaric-1388030_jalzsm_al2c9r.jpg",
+                "rating": 4.1,
+                "activities": 250
+            },
+            {
+                "city": "Sydney ",
+                "country": "Australia",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-patrick-mclachlan-995765_nakswl_bmgkrt.jpg",
+                "rating": 4.5,
+                "activities": 124
+            },
+            {
+                "city": "London",
+                "country": "UK",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-chris-schippers-427679_rqchvp_vueawc.jpg",
+                "rating": 4.0,
+                "activities": 299
+            },
+            {
+                "city": "Paris",
+                "country": "France",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-chris-molloy-1308940_vecke4_lvdi33.jpg",
+                "rating": 4.2,
+                "activities": 179
+            },
+            {
+                "city": "Tokyo",
+                "country": "Japan",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528928/hotel-app/featured-destinations/pexels-aleksandar-pasaric-2506923_szxh0t_qmnszk.jpg",
+                "rating": 4.8,
+                "activities": 160
+            },
+            {
+                "city": "Hanoi",
+                "country": "Vietnam",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528928/hotel-app/featured-destinations/pexels-huy-phan-1437618_li5ydp_itlkoe.jpg",
+                "rating": 4.5,
+                "activities": 210
+            }
+        ],
+        "top-tour": [
+            {
+                "country": "Japan",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-belle-co-402028_ipui4w_ybe88g.jpg",
+                "place": "Japan",
+                "placesQty": 10
+            },
+            {
+                "country": "Bali",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-kimberly-mcneilus-2480626_eb5zha_nmzi4h.jpg",
+                "place": "Indonesia",
+                "placesQty": 7
+            },
+            {
+                "country": "Spain",
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-samuel-sweet-6145647_hwigz4_elkxps.jpg",
+                "place": "Barcelona",
+                "placesQty": 19
+            }
+        ],
+        "explore-world": [
+            {
+                "title": "Comfort Space",
+                "city": "Marmaris",
+                "country": "Turkey",
+                "price": 220,
+                "distance-from-city-center": "1.2 km",
+                "rating": 4.7,
+                "amount-of-rating": 150,
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-binyamin-mellish-106399_icqiwy_vddtbg.jpg"
+            },
+            {
+                "title": "Comfort Space",
+                "city": "Paris",
+                "country": "France",
+                "price": 110,
+                "distance-from-city-center": "3 km",
+                "rating": 5,
+                "amount-of-rating": 150,
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-binyamin-mellish-1396122_prtue5_uhtvwj.jpg"
+            },
+            {
+                "title": "Comfort Space",
+                "city": "Madrid",
+                "country": "Spain",
+                "price": 300,
+                "distance-from-city-center": "0.6 km",
+                "rating": 4.5,
+                "amount-of-rating": 150,
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-binyamin-mellish-186077_cbirbs_ncjpt0.jpg"
+            },
+            {
+                "title": "Comfort Space",
+                "city": "Jerusalem",
+                "country": "Israel",
+                "price": 400,
+                "distance-from-city-center": "0.1 km",
+                "rating": 4.3,
+                "amount-of-rating": 150,
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-expect-best-323780_dk5hki_hrlmks.jpg"
+            }
+        ],
+        "trending-cities": [
+            {
+                "city": "Manila",
+                "price": 220,
+                "rating": 5,
+                "amount-of-rating": 150,
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528939/hotel-app/trending-cities/pexels-pixabay-210367_nbupkd_bphzhq.jpg"
+            },
+            {
+                "city": "Frankfurt am Main",
+                "price": 340,
+                "rating": 4.4,
+                "amount-of-rating": 12,
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528939/hotel-app/trending-cities/pexels-bruno-gla%CC%88tsch-1398003_hgtd8g_lywqss.jpg"
+            },
+            {
+                "city": "San Francisco",
+                "price": 105,
+                "rating": 5,
+                "amount-of-rating": 98,
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528939/hotel-app/trending-cities/pexels-pixabay-208745_uaspib_gjdfio.jpg"
+            },
+            {
+                "city": "Washington",
+                "price": 460,
+                "rating": 4.8,
+                "amount-of-rating": 221,
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528939/hotel-app/trending-cities/pexels-samad-ismayilov-739047_v8kum0_okrz5b.jpg"
+            },
+            {
+                "city": "Seattle",
+                "price": 210,
+                "rating": 4.5,
+                "amount-of-rating": 1002,
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528940/hotel-app/trending-cities/pexels-josh-fields-3964406_gjxosa_f8yv3q.jpg"
+            },
+            {
+                "city": "Stockholm",
+                "price": 130,
+                "rating": 4.2,
+                "amount-of-rating": 99,
+                "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528940/hotel-app/trending-cities/pexels-pixabay-33612_km1qos_zog5kf.jpg"
+            }
+        ],
+        "supported-destinations": [
+            "paris",
+            "barcelona",
+            "jerusalem",
+            "newyork"
+        ],
+        "paris": [
+            {
+                "name": "Entire rental unit hosted by Ivana",
+                "tags": ["1 guest", "Studio", "1 bed", "1 bath"],
+                "price": "$100",
+                "description": "Studio of 25m2 in a secure building near the metro La Muette (line 9) and Boulainvilliers (rer c). Numerous buses nearby. Food and clothing shops (rue de Passy) The studio has all amenities. It is equipped with an oven, stove, fridge, dishwasher and washing machine. Towels, toiletries, linens and kitchenware are provided. A double bed with a beautiful Simmons mattress. Studio on course, very quiet.",
+                "images": [
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/4ad9de55-cab3-497f-8ce1-b99f893d3a1d_sfa060_oksmac.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/8f32a693-5c21-4da7-a5d8-f7f18428fcb4_mumcqx_ptimqq.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/f850be81-b989-45e1-87d3-9b413befb26f_jfvdr8_ci84we.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/633aad0e-cecf-4643-9f54-555c32f3f4ee_s8dsiq_w8swuc.webp"
+                ],
+                "amenities": [
+                    "Kitchen",
+                    "TV",
+                    "Washer",
+                    "Elevator",
+                    "Wifi",
+                    "Hair dryer"
+                ],
+                "reviews": [
+                    {
+                        "name": "Laura",
+                        "location": "Spain",
+                        "img": "",
+                        "rating": 4,
+                        "review": "Communication with Ivana was easy and swift, the place is well-located, equipped and in good condition. Stayed for more than a week and had everything I needed for my stay."
+                    },
+                    {
+                        "name": "Izzet",
+                        "location": "Israel",
+                        "img": "",
+                        "rating": 4,
+                        "review": "Great communication with Ivana, nice place to stay for business trip. You can reach metro (line 9) in 30 meters. Kitchen was bien équipée and all cleaning items"
+                    }
+                ],
+                "current-bookings": [
+                    {
+                        "start": "Oct 2, 2022",
+                        "end": "Oct 7, 2022"
+                    },
+                    {
+                        "start": "Nov 14, 2022",
+                        "end": "Nov 19, 2022"
+                    }
+                ]
+            },
+            {
+                "name": "Entire rental unit hosted by My Key",
+                "tags": ["4 guests", "1 bedroom", "2 beds", "1 bath"],
+                "price": "$200",
+                "description": "Welcome to my flat, completely renovated by an architect in February 2022 and located in the heart of the Marais in the Enfants Rouges district. You will be charmed by the location of this place, just a stone's throw from the rue de Bretagne and its historic Marché des Enfants Rouges. This lively district offers all the ideal conditions for a stay in our beautiful city of Paris. The space The 26m2 flat is composed of a living room with a sofa bed (140X200), a fully equipped open kitchen (ultra-quiet fridge-freezer, oven, induction hob, hood, dishwasher, coffee maker, toaster and kettle, as well as numerous cooking accessories), a sleeping area with a double bed separated from the rest of the flat by a glas roof, a dressing area and a walk-in shower with a separate toilet and washing machine. It has wifi (fibre). The welcome products (shower gel, shampoo), household linen and bath towels are provided and changed between each reservation.",
+                "images": [
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/2d2d7ec0-9674-45ea-9ea3-6ed57fabaa1f_jivh1h_br3wfq.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/f5d2142a-af9d-4fd6-85ce-ab4789a1fbaa_idt8ui_oshlqj.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/072e819d-cb7b-4905-925f-4130a34cb379_g3xn0l_sv5mqw.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/f5d2142a-af9d-4fd6-85ce-ab4789a1fbaa_idt8ui_oshlqj.webp"
+                ],
+                "amenities": [
+                    "Courtyard view",
+                    "Wifi",
+                    "Free washer",
+                    "Security cameras",
+                    "Kitchen",
+                    "EV charger"
+                ],
+                "reviews": [
+                    {
+                        "name": "Karine",
+                        "location": "US",
+                        "img": "",
+                        "rating": 4.3,
+                        "review": "The location is perfect and the place has potential but it lacks of love and attention. The table is so wobbly it’s absolutely un-usable let alone"
+                    },
+                    {
+                        "name": "Teri",
+                        "location": "UK",
+                        "img": "",
+                        "rating": 4.9,
+                        "review": "The apartment is bright and very clean. Safe location."
+                    }
+                ],
+                "current-bookings": [
+                    {
+                        "start": "Nov 21, 2022",
+                        "end": "Nov 28, 2022"
+                    }
+                ]
+            },
+            {
+                "name": "Opéra-Madeleine Parisian find",
+                "tags": ["4 guests", "1 bedroom", "1 bed", "1 bath"],
+                "price": "$330",
+                "description": "Nice apartment and bright fully equipped situated in the center of Paris, a few meters of the famous shops like Printemps, Galeries Lafayette, Channel, Hermes and main tourist points of Paris as the Opera Garnier, Madeleine, Concorde and the Jardin des Tulleries, The Louvre Museum and the famous Avenue des Champs Elysées.The space The apartment is located in the heart of Paris, it is completely equipped. Bed linen and towels are provided and you will have free access to a Wi-Fi connection.",
+                "images": [
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/e43811c3-2e7a-4530-b979-cfa5f4a73384_pwruer_m0ndke.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/8b2babce-5571-402a-b459-6a1051a1078b_djkdl1_zllqgu.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/1f4f5abc-0e4c-42a0-b3d1-37c0e027c327_tj9vme_lqcgkv.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/d6099f7c-3b94-4238-8852-09f7cf7919f9_yb8bvh_edt0ze.webp"
+                ],
+                "amenities": [
+                    "Kitchen",
+                    "HDTV",
+                    "Refrigerator",
+                    "Wifi",
+                    "Hair dryer"
+                ],
+                "reviews": [
+                    {
+                        "name": "Andrea",
+                        "location": "Australia",
+                        "img": "",
+                        "rating": 5,
+                        "review": "As first time Paris-explorers, Bryan’s accommodation was perfect for our family of four (including two teens). Close to the glories of the Haussmann district and Gallery Lafayette,"
+                    },
+                    {
+                        "name": "Helen",
+                        "location": "USA",
+                        "img": "",
+                        "rating": 5,
+                        "review": "Absolutely love the stay. Bryan was a great host and communication was fantastic. Highly recommend."
+                    }
+                ],
+                "current-bookings": []
+            },
+            {
+                "name": "Unique studio near Galeries Lafayette",
+                "tags": ["2 guests", "Studio", "1 bed", "1 bath"],
+                "price": "$95",
+                "description": "In the heart of Paris, you will be captivated by the charm of this elegant and unique studio. Exceptionally located, near the Galeries Lafayette, Opéra Garnier and more! You will be able to experience Paris in a beautiful and magical way, in one of the most in-demand neighborhood. *Amazing* boulangeries, coffee places, restaurants are just around the corner and I will gladly advise you about it! I will provide the bed linen and towels for your stay",
+                "images": [
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/9b35e99d-2999-4f3f-9ccf-28fe06a3473a_ztz8mm_courpc.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/28fb2c5b-f57f-41f1-9448-97ed390ed1bb_zzyng3_mbhysp.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/06b8afe8-7dfd-4f69-8b21-1cb0eb3afd67_flhtmg_rgngyi.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/987ea3f6-6400-44fa-a636-098f800b98dd_rrn1cq_z5ytcv.webp"
+                ],
+                "amenities": [
+                    "Courtyard view",
+                    "Wifi",
+                    "Free washer",
+                    "Security cameras",
+                    "Kitchen",
+                    "EV charger"
+                ],
+                "reviews": [
+                    {
+                        "name": "Andrea",
+                        "location": "Australia",
+                        "img": "",
+                        "rating": 5,
+                        "review": "As first time Paris-explorers, Bryan’s accommodation was perfect for our family of four (including two teens). Close to the glories of the Haussmann district and Gallery Lafayette,"
+                    },
+                    {
+                        "name": "Helen",
+                        "location": "USA",
+                        "img": "",
+                        "rating": 5,
+                        "review": "Absolutely love the stay. Bryan was a great host and communication was fantastic. Highly recommend."
+                    }
+                ],
+                "current-bookings": [
+                    {
+                        "start": "Nov 1, 2022",
+                        "end": "Nov 4, 2022"
+                    }
+                ]
+            }
+        ],
+        "barcelona": [
+            {
+                "name": "Entire rental unit hosted by Ivana",
+                "tags": ["1 guest", "Studio", "1 bed", "1 bath"],
+                "price": "$100",
+                "description": "Studio of 25m2 in a secure building near the metro La Muette (line 9) and Boulainvilliers (rer c). Numerous buses nearby. Food and clothing shops (rue de Passy) The studio has all amenities. It is equipped with an oven, stove, fridge, dishwasher and washing machine. Towels, toiletries, linens and kitchenware are provided. A double bed with a beautiful Simmons mattress. Studio on course, very quiet.",
+                "images": [
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/4ad9de55-cab3-497f-8ce1-b99f893d3a1d_sfa060_oksmac.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/8f32a693-5c21-4da7-a5d8-f7f18428fcb4_mumcqx_ptimqq.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/f850be81-b989-45e1-87d3-9b413befb26f_jfvdr8_ci84we.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/633aad0e-cecf-4643-9f54-555c32f3f4ee_s8dsiq_w8swuc.webp"
+                ],
+                "amenities": [
+                    "Kitchen",
+                    "TV",
+                    "Washer",
+                    "Elevator",
+                    "Wifi",
+                    "Hair dryer"
+                ],
+                "reviews": [
+                    {
+                        "name": "Laura",
+                        "location": "Spain",
+                        "img": "",
+                        "rating": 4,
+                        "review": "Communication with Ivana was easy and swift, the place is well-located, equipped and in good condition. Stayed for more than a week and had everything I needed for my stay."
+                    },
+                    {
+                        "name": "Izzet",
+                        "location": "Israel",
+                        "img": "",
+                        "rating": 4,
+                        "review": "Great communication with Ivana, nice place to stay for business trip. You can reach metro (line 9) in 30 meters. Kitchen was bien équipée and all cleaning items"
+                    }
+                ],
+                "current-bookings": [
+                    {
+                        "start": "Oct 2, 2022",
+                        "end": "Oct 7, 2022"
+                    },
+                    {
+                        "start": "Nov 14, 2022",
+                        "end": "Nov 19, 2022"
+                    }
+                ]
+            }
+        ],
+        "jerusalem": [
+            {
+                "name": "Entire rental unit hosted by Ivana",
+                "tags": ["1 guest", "Studio", "1 bed", "1 bath"],
+                "price": "$100",
+                "description": "Studio of 25m2 in a secure building near the metro La Muette (line 9) and Boulainvilliers (rer c). Numerous buses nearby. Food and clothing shops (rue de Passy) The studio has all amenities. It is equipped with an oven, stove, fridge, dishwasher and washing machine. Towels, toiletries, linens and kitchenware are provided. A double bed with a beautiful Simmons mattress. Studio on course, very quiet.",
+                "images": [
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/4ad9de55-cab3-497f-8ce1-b99f893d3a1d_sfa060_oksmac.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/8f32a693-5c21-4da7-a5d8-f7f18428fcb4_mumcqx_ptimqq.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/f850be81-b989-45e1-87d3-9b413befb26f_jfvdr8_ci84we.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/633aad0e-cecf-4643-9f54-555c32f3f4ee_s8dsiq_w8swuc.webp"
+                ],
+                "amenities": [
+                    "Kitchen",
+                    "TV",
+                    "Washer",
+                    "Elevator",
+                    "Wifi",
+                    "Hair dryer"
+                ],
+                "reviews": [
+                    {
+                        "name": "Laura",
+                        "location": "Spain",
+                        "img": "",
+                        "rating": 4,
+                        "review": "Communication with Ivana was easy and swift, the place is well-located, equipped and in good condition. Stayed for more than a week and had everything I needed for my stay."
+                    },
+                    {
+                        "name": "Izzet",
+                        "location": "Israel",
+                        "img": "",
+                        "rating": 4,
+                        "review": "Great communication with Ivana, nice place to stay for business trip. You can reach metro (line 9) in 30 meters. Kitchen was bien équipée and all cleaning items"
+                    }
+                ],
+                "current-bookings": [
+                    {
+                        "start": "Oct 2, 2022",
+                        "end": "Oct 7, 2022"
+                    },
+                    {
+                        "start": "Nov 14, 2022",
+                        "end": "Nov 19, 2022"
+                    }
+                ]
+            },
+            {
+                "name": "Entire rental unit hosted by My Key",
+                "tags": ["4 guests", "1 bedroom", "2 beds", "1 bath"],
+                "price": "$200",
+                "description": "Welcome to my flat, completely renovated by an architect in February 2022 and located in the heart of the Marais in the Enfants Rouges district. You will be charmed by the location of this place, just a stone's throw from the rue de Bretagne and its historic Marché des Enfants Rouges. This lively district offers all the ideal conditions for a stay in our beautiful city of Paris. The space The 26m2 flat is composed of a living room with a sofa bed (140X200), a fully equipped open kitchen (ultra-quiet fridge-freezer, oven, induction hob, hood, dishwasher, coffee maker, toaster and kettle, as well as numerous cooking accessories), a sleeping area with a double bed separated from the rest of the flat by a glas roof, a dressing area and a walk-in shower with a separate toilet and washing machine. It has wifi (fibre). The welcome products (shower gel, shampoo), household linen and bath towels are provided and changed between each reservation.",
+                "images": [
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/2d2d7ec0-9674-45ea-9ea3-6ed57fabaa1f_jivh1h_br3wfq.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/f5d2142a-af9d-4fd6-85ce-ab4789a1fbaa_idt8ui_oshlqj.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/072e819d-cb7b-4905-925f-4130a34cb379_g3xn0l_sv5mqw.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/f5d2142a-af9d-4fd6-85ce-ab4789a1fbaa_idt8ui_oshlqj.webp"
+                ],
+                "amenities": [
+                    "Courtyard view",
+                    "Wifi",
+                    "Free washer",
+                    "Security cameras",
+                    "Kitchen",
+                    "EV charger"
+                ],
+                "reviews": [
+                    {
+                        "name": "Karine",
+                        "location": "US",
+                        "img": "",
+                        "rating": 4.3,
+                        "review": "The location is perfect and the place has potential but it lacks of love and attention. The table is so wobbly it’s absolutely un-usable let alone"
+                    },
+                    {
+                        "name": "Teri",
+                        "location": "UK",
+                        "img": "",
+                        "rating": 4.9,
+                        "review": "The apartment is bright and very clean. Safe location."
+                    }
+                ],
+                "current-bookings": [
+                    {
+                        "start": "Nov 21, 2022",
+                        "end": "Nov 28, 2022"
+                    }
+                ]
+            },
+            {
+                "name": "Opéra-Madeleine Parisian find",
+                "tags": ["4 guests", "1 bedroom", "1 bed", "1 bath"],
+                "price": "$330",
+                "description": "Nice apartment and bright fully equipped situated in the center of Paris, a few meters of the famous shops like Printemps, Galeries Lafayette, Channel, Hermes and main tourist points of Paris as the Opera Garnier, Madeleine, Concorde and the Jardin des Tulleries, The Louvre Museum and the famous Avenue des Champs Elysées.The space The apartment is located in the heart of Paris, it is completely equipped. Bed linen and towels are provided and you will have free access to a Wi-Fi connection.",
+                "images": [
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/e43811c3-2e7a-4530-b979-cfa5f4a73384_pwruer_m0ndke.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/8b2babce-5571-402a-b459-6a1051a1078b_djkdl1_zllqgu.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/1f4f5abc-0e4c-42a0-b3d1-37c0e027c327_tj9vme_lqcgkv.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/d6099f7c-3b94-4238-8852-09f7cf7919f9_yb8bvh_edt0ze.webp"
+                ],
+                "amenities": [
+                    "Kitchen",
+                    "HDTV",
+                    "Refrigerator",
+                    "Wifi",
+                    "Hair dryer"
+                ],
+                "reviews": [
+                    {
+                        "name": "Andrea",
+                        "location": "Australia",
+                        "img": "",
+                        "rating": 5,
+                        "review": "As first time Paris-explorers, Bryan’s accommodation was perfect for our family of four (including two teens). Close to the glories of the Haussmann district and Gallery Lafayette,"
+                    },
+                    {
+                        "name": "Helen",
+                        "location": "USA",
+                        "img": "",
+                        "rating": 5,
+                        "review": "Absolutely love the stay. Bryan was a great host and communication was fantastic. Highly recommend."
+                    }
+                ],
+                "current-bookings": []
+            },
+            {
+                "name": "Unique studio near Galeries Lafayette",
+                "tags": ["2 guests", "Studio", "1 bed", "1 bath"],
+                "price": "$95",
+                "description": "In the heart of Paris, you will be captivated by the charm of this elegant and unique studio. Exceptionally located, near the Galeries Lafayette, Opéra Garnier and more! You will be able to experience Paris in a beautiful and magical way, in one of the most in-demand neighborhood. *Amazing* boulangeries, coffee places, restaurants are just around the corner and I will gladly advise you about it! I will provide the bed linen and towels for your stay",
+                "images": [
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/9b35e99d-2999-4f3f-9ccf-28fe06a3473a_ztz8mm_courpc.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/28fb2c5b-f57f-41f1-9448-97ed390ed1bb_zzyng3_mbhysp.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/06b8afe8-7dfd-4f69-8b21-1cb0eb3afd67_flhtmg_rgngyi.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/987ea3f6-6400-44fa-a636-098f800b98dd_rrn1cq_z5ytcv.webp"
+                ],
+                "amenities": [
+                    "Courtyard view",
+                    "Wifi",
+                    "Free washer",
+                    "Security cameras",
+                    "Kitchen",
+                    "EV charger"
+                ],
+                "reviews": [
+                    {
+                        "name": "Andrea",
+                        "location": "Australia",
+                        "img": "",
+                        "rating": 5,
+                        "review": "As first time Paris-explorers, Bryan’s accommodation was perfect for our family of four (including two teens). Close to the glories of the Haussmann district and Gallery Lafayette,"
+                    },
+                    {
+                        "name": "Helen",
+                        "location": "USA",
+                        "img": "",
+                        "rating": 5,
+                        "review": "Absolutely love the stay. Bryan was a great host and communication was fantastic. Highly recommend."
+                    }
+                ],
+                "current-bookings": [
+                    {
+                        "start": "Nov 1, 2022",
+                        "end": "Nov 4, 2022"
+                    }
+                ]
+            }
+        ],
+        "newyork": [
+            {
+                "name": "Entire rental unit hosted by Ivana",
+                "tags": ["1 guest", "Studio", "1 bed", "1 bath"],
+                "price": "$100",
+                "description": "Studio of 25m2 in a secure building near the metro La Muette (line 9) and Boulainvilliers (rer c). Numerous buses nearby. Food and clothing shops (rue de Passy) The studio has all amenities. It is equipped with an oven, stove, fridge, dishwasher and washing machine. Towels, toiletries, linens and kitchenware are provided. A double bed with a beautiful Simmons mattress. Studio on course, very quiet.",
+                "images": [
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/4ad9de55-cab3-497f-8ce1-b99f893d3a1d_sfa060_oksmac.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/8f32a693-5c21-4da7-a5d8-f7f18428fcb4_mumcqx_ptimqq.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/f850be81-b989-45e1-87d3-9b413befb26f_jfvdr8_ci84we.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/633aad0e-cecf-4643-9f54-555c32f3f4ee_s8dsiq_w8swuc.webp"
+                ],
+                "amenities": [
+                    "Kitchen",
+                    "TV",
+                    "Washer",
+                    "Elevator",
+                    "Wifi",
+                    "Hair dryer"
+                ],
+                "reviews": [
+                    {
+                        "name": "Laura",
+                        "location": "Spain",
+                        "img": "",
+                        "rating": 4,
+                        "review": "Communication with Ivana was easy and swift, the place is well-located, equipped and in good condition. Stayed for more than a week and had everything I needed for my stay."
+                    },
+                    {
+                        "name": "Izzet",
+                        "location": "Israel",
+                        "img": "",
+                        "rating": 4,
+                        "review": "Great communication with Ivana, nice place to stay for business trip. You can reach metro (line 9) in 30 meters. Kitchen was bien équipée and all cleaning items"
+                    }
+                ],
+                "current-bookings": [
+                    {
+                        "start": "Oct 2, 2022",
+                        "end": "Oct 7, 2022"
+                    },
+                    {
+                        "start": "Nov 14, 2022",
+                        "end": "Nov 19, 2022"
+                    }
+                ]
+            },
+            {
+                "name": "Entire rental unit hosted by My Key",
+                "tags": ["4 guests", "1 bedroom", "2 beds", "1 bath"],
+                "price": "$200",
+                "description": "Welcome to my flat, completely renovated by an architect in February 2022 and located in the heart of the Marais in the Enfants Rouges district. You will be charmed by the location of this place, just a stone's throw from the rue de Bretagne and its historic Marché des Enfants Rouges. This lively district offers all the ideal conditions for a stay in our beautiful city of Paris. The space The 26m2 flat is composed of a living room with a sofa bed (140X200), a fully equipped open kitchen (ultra-quiet fridge-freezer, oven, induction hob, hood, dishwasher, coffee maker, toaster and kettle, as well as numerous cooking accessories), a sleeping area with a double bed separated from the rest of the flat by a glas roof, a dressing area and a walk-in shower with a separate toilet and washing machine. It has wifi (fibre). The welcome products (shower gel, shampoo), household linen and bath towels are provided and changed between each reservation.",
+                "images": [
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/2d2d7ec0-9674-45ea-9ea3-6ed57fabaa1f_jivh1h_br3wfq.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/f5d2142a-af9d-4fd6-85ce-ab4789a1fbaa_idt8ui_oshlqj.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/072e819d-cb7b-4905-925f-4130a34cb379_g3xn0l_sv5mqw.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/f5d2142a-af9d-4fd6-85ce-ab4789a1fbaa_idt8ui_oshlqj.webp"
+                ],
+                "amenities": [
+                    "Courtyard view",
+                    "Wifi",
+                    "Free washer",
+                    "Security cameras",
+                    "Kitchen",
+                    "EV charger"
+                ],
+                "reviews": [
+                    {
+                        "name": "Karine",
+                        "location": "US",
+                        "img": "",
+                        "rating": 4.3,
+                        "review": "The location is perfect and the place has potential but it lacks of love and attention. The table is so wobbly it’s absolutely un-usable let alone"
+                    },
+                    {
+                        "name": "Teri",
+                        "location": "UK",
+                        "img": "",
+                        "rating": 4.9,
+                        "review": "The apartment is bright and very clean. Safe location."
+                    }
+                ],
+                "current-bookings": [
+                    {
+                        "start": "Nov 21, 2022",
+                        "end": "Nov 28, 2022"
+                    }
+                ]
+            },
+            {
+                "name": "Opéra-Madeleine Parisian find",
+                "tags": ["4 guests", "1 bedroom", "1 bed", "1 bath"],
+                "price": "$330",
+                "description": "Nice apartment and bright fully equipped situated in the center of Paris, a few meters of the famous shops like Printemps, Galeries Lafayette, Channel, Hermes and main tourist points of Paris as the Opera Garnier, Madeleine, Concorde and the Jardin des Tulleries, The Louvre Museum and the famous Avenue des Champs Elysées.The space The apartment is located in the heart of Paris, it is completely equipped. Bed linen and towels are provided and you will have free access to a Wi-Fi connection.",
+                "images": [
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/e43811c3-2e7a-4530-b979-cfa5f4a73384_pwruer_m0ndke.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/8b2babce-5571-402a-b459-6a1051a1078b_djkdl1_zllqgu.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/1f4f5abc-0e4c-42a0-b3d1-37c0e027c327_tj9vme_lqcgkv.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/d6099f7c-3b94-4238-8852-09f7cf7919f9_yb8bvh_edt0ze.webp"
+                ],
+                "amenities": [
+                    "Kitchen",
+                    "HDTV",
+                    "Refrigerator",
+                    "Wifi",
+                    "Hair dryer"
+                ],
+                "reviews": [
+                    {
+                        "name": "Andrea",
+                        "location": "Australia",
+                        "img": "",
+                        "rating": 5,
+                        "review": "As first time Paris-explorers, Bryan’s accommodation was perfect for our family of four (including two teens). Close to the glories of the Haussmann district and Gallery Lafayette,"
+                    },
+                    {
+                        "name": "Helen",
+                        "location": "USA",
+                        "img": "",
+                        "rating": 5,
+                        "review": "Absolutely love the stay. Bryan was a great host and communication was fantastic. Highly recommend."
+                    }
+                ],
+                "current-bookings": []
+            },
+            {
+                "name": "Unique studio near Galeries Lafayette",
+                "tags": ["2 guests", "Studio", "1 bed", "1 bath"],
+                "price": "$95",
+                "description": "In the heart of Paris, you will be captivated by the charm of this elegant and unique studio. Exceptionally located, near the Galeries Lafayette, Opéra Garnier and more! You will be able to experience Paris in a beautiful and magical way, in one of the most in-demand neighborhood. *Amazing* boulangeries, coffee places, restaurants are just around the corner and I will gladly advise you about it! I will provide the bed linen and towels for your stay",
+                "images": [
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/9b35e99d-2999-4f3f-9ccf-28fe06a3473a_ztz8mm_courpc.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/28fb2c5b-f57f-41f1-9448-97ed390ed1bb_zzyng3_mbhysp.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/06b8afe8-7dfd-4f69-8b21-1cb0eb3afd67_flhtmg_rgngyi.webp",
+                    "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/987ea3f6-6400-44fa-a636-098f800b98dd_rrn1cq_z5ytcv.webp"
+                ],
+                "amenities": [
+                    "Courtyard view",
+                    "Wifi",
+                    "Free washer",
+                    "Security cameras",
+                    "Kitchen",
+                    "EV charger"
+                ],
+                "reviews": [
+                    {
+                        "name": "Andrea",
+                        "location": "Australia",
+                        "img": "",
+                        "rating": 5,
+                        "review": "As first time Paris-explorers, Bryan’s accommodation was perfect for our family of four (including two teens). Close to the glories of the Haussmann district and Gallery Lafayette,"
+                    },
+                    {
+                        "name": "Helen",
+                        "location": "USA",
+                        "img": "",
+                        "rating": 5,
+                        "review": "Absolutely love the stay. Bryan was a great host and communication was fantastic. Highly recommend."
+                    }
+                ],
+                "current-bookings": [
+                    {
+                        "start": "Nov 1, 2022",
+                        "end": "Nov 4, 2022"
+                    }
+                ]
+            }
+        ],
+        "myuser": {
+            "name": "Jonathan Due",
+            "picsrc": "https://res.cloudinary.com/dugybnapi/image/upload/v1666873285/hotel-app/users/user_ff7xqp.png",
+            "location": "United State",
+            "joinedAt": "05.06.2022",
+            "email": "fake_email@gmail.com",
+            "password": "1111",
+            "address": "2445 Crosswind Drive",
+            "gender": "Male",
+            "birthday": "07.12.1995"
         },
-        {
-            "country": "India",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-darshak-pandya-574313_ykrw9c_uyprf9.jpg",
-            "destinations": 98
-        },
-        {
-            "country": "Maldivies",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-asad-photo-maldives-1483053_ic6pbi_wezb3s.jpg",
-            "destinations": 132
-        },
-        {
-            "country": "Israel",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-mauricio-artieda-610533_hxpgok_xh0jak.jpg",
-            "destinations": 72
-        },
-        {
-            "country": "France",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-pixabay-2363_pqxtxj_xemtvd.jpg",
-            "destinations": 201
-        },
-        {
-            "country": "Morocco",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359667/hotel-app/best-place/pexels-pixabay-273935_xseyqa_afwne7.jpg",
-            "destinations": 66
-        },
-        {
-            "country": "Brazil",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-florencia-potter-351283_u9r32s_clgznt.jpg",
-            "destinations": 139
-        },
-        {
-            "country": "Egypt",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-david-mceachan-71241_ojwpwd_hakrvn.jpg",
-            "destinations": 48
+        "mybookings": {
+            "bookingId": "9246940",
+            "checkin": "Dec 8, 2022",
+            "checkout": "Dec 12, 2022",
+            "price": " 1,950",
+            "title": "Baan Wanglang Riverside",
+            "location": "342 Soi Wat Rakang, Prannok Rd, Siriral, Bankoknoi, Bangkok,",
+            "orderDate": "April 8,2022",
+            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-manuel-joseph-19872_qclbdo_xtuqyq.jpg"
         }
-    ],
-    "featured-destinations": [
-        {
-            "city": "Barcelona",
-            "country": "Spain",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-aleksandar-pasaric-1388030_jalzsm_al2c9r.jpg",
-            "rating": 4.1,
-            "activities": 250
-        },
-        {
-            "city": "Sydney ",
-            "country": "Australia",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-patrick-mclachlan-995765_nakswl_bmgkrt.jpg",
-            "rating": 4.5,
-            "activities": 124
-        },
-        {
-            "city": "London",
-            "country": "UK",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-chris-schippers-427679_rqchvp_vueawc.jpg",
-            "rating": 4.0,
-            "activities": 299
-        },
-        {
-            "city": "Paris",
-            "country": "France",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-chris-molloy-1308940_vecke4_lvdi33.jpg",
-            "rating": 4.2,
-            "activities": 179
-        },
-        {
-            "city": "Tokyo",
-            "country": "Japan",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528928/hotel-app/featured-destinations/pexels-aleksandar-pasaric-2506923_szxh0t_qmnszk.jpg",
-            "rating": 4.8,
-            "activities": 160
-        },
-        {
-            "city": "Hanoi",
-            "country": "Vietnam",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528928/hotel-app/featured-destinations/pexels-huy-phan-1437618_li5ydp_itlkoe.jpg",
-            "rating": 4.5,
-            "activities": 210
-        }
-    ],
-    "top-tour": [
-        {
-            "country": "Japan",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-belle-co-402028_ipui4w_ybe88g.jpg",
-            "place": "Japan",
-            "placesQty": 10
-        },
-        {
-            "country": "Bali",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-kimberly-mcneilus-2480626_eb5zha_nmzi4h.jpg",
-            "place": "Indonesia",
-            "placesQty": 7
-        },
-        {
-            "country": "Spain",
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-samuel-sweet-6145647_hwigz4_elkxps.jpg",
-            "place": "Barcelona",
-            "placesQty": 19
-        }
-    ],
-    "explore-world": [
-        {
-            "title": "Comfort Space",
-            "city": "Marmaris",
-            "country": "Turkey",
-            "price": 220,
-            "distance-from-city-center": "1.2 km",
-            "rating": 4.7,
-            "amount-of-rating": 150,
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-binyamin-mellish-106399_icqiwy_vddtbg.jpg"
-        },
-        {
-            "title": "Comfort Space",
-            "city": "Paris",
-            "country": "France",
-            "price": 110,
-            "distance-from-city-center": "3 km",
-            "rating": 5,
-            "amount-of-rating": 150,
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-binyamin-mellish-1396122_prtue5_uhtvwj.jpg"
-        },
-        {
-            "title": "Comfort Space",
-            "city": "Madrid",
-            "country": "Spain",
-            "price": 300,
-            "distance-from-city-center": "0.6 km",
-            "rating": 4.5,
-            "amount-of-rating": 150,
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-binyamin-mellish-186077_cbirbs_ncjpt0.jpg"
-        },
-        {
-            "title": "Comfort Space",
-            "city": "Jerusalem",
-            "country": "Israel",
-            "price": 400,
-            "distance-from-city-center": "0.1 km",
-            "rating": 4.3,
-            "amount-of-rating": 150,
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-expect-best-323780_dk5hki_hrlmks.jpg"
-        }
-    ],
-    "trending-cities": [
-        {
-            "city": "Manila",
-            "price": 220,
-            "rating": 5,
-            "amount-of-rating": 150,
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528939/hotel-app/trending-cities/pexels-pixabay-210367_nbupkd_bphzhq.jpg"
-        },
-        {
-            "city": "Frankfurt am Main",
-            "price": 340,
-            "rating": 4.4,
-            "amount-of-rating": 12,
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528939/hotel-app/trending-cities/pexels-bruno-gla%CC%88tsch-1398003_hgtd8g_lywqss.jpg"
-        },
-        {
-            "city": "San Francisco",
-            "price": 105,
-            "rating": 5,
-            "amount-of-rating": 98,
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528939/hotel-app/trending-cities/pexels-pixabay-208745_uaspib_gjdfio.jpg"
-        },
-        {
-            "city": "Washington",
-            "price": 460,
-            "rating": 4.8,
-            "amount-of-rating": 221,
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528939/hotel-app/trending-cities/pexels-samad-ismayilov-739047_v8kum0_okrz5b.jpg"
-        },
-        {
-            "city": "Seattle",
-            "price": 210,
-            "rating": 4.5,
-            "amount-of-rating": 1002,
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528940/hotel-app/trending-cities/pexels-josh-fields-3964406_gjxosa_f8yv3q.jpg"
-        },
-        {
-            "city": "Stockholm",
-            "price": 130,
-            "rating": 4.2,
-            "amount-of-rating": 99,
-            "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528940/hotel-app/trending-cities/pexels-pixabay-33612_km1qos_zog5kf.jpg"
-        }
-    ],
-    "supported-destinations": ["paris", "barcelona", "jerusalem", "newyork"],
-    "paris": [
-        {
-            "name": "Entire rental unit hosted by Ivana",
-            "tags": ["1 guest", "Studio", "1 bed", "1 bath"],
-            "price": "$100",
-            "description": "Studio of 25m2 in a secure building near the metro La Muette (line 9) and Boulainvilliers (rer c). Numerous buses nearby. Food and clothing shops (rue de Passy) The studio has all amenities. It is equipped with an oven, stove, fridge, dishwasher and washing machine. Towels, toiletries, linens and kitchenware are provided. A double bed with a beautiful Simmons mattress. Studio on course, very quiet.",
-            "images": [
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/4ad9de55-cab3-497f-8ce1-b99f893d3a1d_sfa060_oksmac.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/8f32a693-5c21-4da7-a5d8-f7f18428fcb4_mumcqx_ptimqq.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/f850be81-b989-45e1-87d3-9b413befb26f_jfvdr8_ci84we.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/633aad0e-cecf-4643-9f54-555c32f3f4ee_s8dsiq_w8swuc.webp"
-            ],
-            "amenities": [
-                "Kitchen",
-                "TV",
-                "Washer",
-                "Elevator",
-                "Wifi",
-                "Hair dryer"
-            ],
-            "reviews": [
-                {
-                    "name": "Laura",
-                    "location": "Spain",
-                    "img": "",
-                    "rating": 4,
-                    "review": "Communication with Ivana was easy and swift, the place is well-located, equipped and in good condition. Stayed for more than a week and had everything I needed for my stay."
-                },
-                {
-                    "name": "Izzet",
-                    "location": "Israel",
-                    "img": "",
-                    "rating": 4,
-                    "review": "Great communication with Ivana, nice place to stay for business trip. You can reach metro (line 9) in 30 meters. Kitchen was bien équipée and all cleaning items"
-                }
-            ],
-            "current-bookings": [
-                {
-                    "start": "Oct 2, 2022",
-                    "end": "Oct 7, 2022"
-                },
-                {
-                    "start": "Nov 14, 2022",
-                    "end": "Nov 19, 2022"
-                }
-            ]
-        },
-        {
-            "name": "Entire rental unit hosted by My Key",
-            "tags": ["4 guests", "1 bedroom", "2 beds", "1 bath"],
-            "price": "$200",
-            "description": "Welcome to my flat, completely renovated by an architect in February 2022 and located in the heart of the Marais in the Enfants Rouges district. You will be charmed by the location of this place, just a stone's throw from the rue de Bretagne and its historic Marché des Enfants Rouges. This lively district offers all the ideal conditions for a stay in our beautiful city of Paris. The space The 26m2 flat is composed of a living room with a sofa bed (140X200), a fully equipped open kitchen (ultra-quiet fridge-freezer, oven, induction hob, hood, dishwasher, coffee maker, toaster and kettle, as well as numerous cooking accessories), a sleeping area with a double bed separated from the rest of the flat by a glas roof, a dressing area and a walk-in shower with a separate toilet and washing machine. It has wifi (fibre). The welcome products (shower gel, shampoo), household linen and bath towels are provided and changed between each reservation.",
-            "images": [
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/2d2d7ec0-9674-45ea-9ea3-6ed57fabaa1f_jivh1h_br3wfq.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/f5d2142a-af9d-4fd6-85ce-ab4789a1fbaa_idt8ui_oshlqj.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/072e819d-cb7b-4905-925f-4130a34cb379_g3xn0l_sv5mqw.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/f5d2142a-af9d-4fd6-85ce-ab4789a1fbaa_idt8ui_oshlqj.webp"
-            ],
-            "amenities": [
-                "Courtyard view",
-                "Wifi",
-                "Free washer",
-                "Security cameras",
-                "Kitchen",
-                "EV charger"
-            ],
-            "reviews": [
-                {
-                    "name": "Karine",
-                    "location": "US",
-                    "img": "",
-                    "rating": 4.3,
-                    "review": "The location is perfect and the place has potential but it lacks of love and attention. The table is so wobbly it’s absolutely un-usable let alone"
-                },
-                {
-                    "name": "Teri",
-                    "location": "UK",
-                    "img": "",
-                    "rating": 4.9,
-                    "review": "The apartment is bright and very clean. Safe location."
-                }
-            ],
-            "current-bookings": [
-                {
-                    "start": "Nov 21, 2022",
-                    "end": "Nov 28, 2022"
-                }
-            ]
-        },
-        {
-            "name": "Opéra-Madeleine Parisian find",
-            "tags": ["4 guests", "1 bedroom", "1 bed", "1 bath"],
-            "price": "$330",
-            "description": "Nice apartment and bright fully equipped situated in the center of Paris, a few meters of the famous shops like Printemps, Galeries Lafayette, Channel, Hermes and main tourist points of Paris as the Opera Garnier, Madeleine, Concorde and the Jardin des Tulleries, The Louvre Museum and the famous Avenue des Champs Elysées.The space The apartment is located in the heart of Paris, it is completely equipped. Bed linen and towels are provided and you will have free access to a Wi-Fi connection.",
-            "images": [
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/e43811c3-2e7a-4530-b979-cfa5f4a73384_pwruer_m0ndke.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/8b2babce-5571-402a-b459-6a1051a1078b_djkdl1_zllqgu.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/1f4f5abc-0e4c-42a0-b3d1-37c0e027c327_tj9vme_lqcgkv.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/d6099f7c-3b94-4238-8852-09f7cf7919f9_yb8bvh_edt0ze.webp"
-            ],
-            "amenities": [
-                "Kitchen",
-                "HDTV",
-                "Refrigerator",
-                "Wifi",
-                "Hair dryer"
-            ],
-            "reviews": [
-                {
-                    "name": "Andrea",
-                    "location": "Australia",
-                    "img": "",
-                    "rating": 5,
-                    "review": "As first time Paris-explorers, Bryan’s accommodation was perfect for our family of four (including two teens). Close to the glories of the Haussmann district and Gallery Lafayette,"
-                },
-                {
-                    "name": "Helen",
-                    "location": "USA",
-                    "img": "",
-                    "rating": 5,
-                    "review": "Absolutely love the stay. Bryan was a great host and communication was fantastic. Highly recommend."
-                }
-            ],
-            "current-bookings": []
-        },
-        {
-            "name": "Unique studio near Galeries Lafayette",
-            "tags": ["2 guests", "Studio", "1 bed", "1 bath"],
-            "price": "$95",
-            "description": "In the heart of Paris, you will be captivated by the charm of this elegant and unique studio. Exceptionally located, near the Galeries Lafayette, Opéra Garnier and more! You will be able to experience Paris in a beautiful and magical way, in one of the most in-demand neighborhood. *Amazing* boulangeries, coffee places, restaurants are just around the corner and I will gladly advise you about it! I will provide the bed linen and towels for your stay",
-            "images": [
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/9b35e99d-2999-4f3f-9ccf-28fe06a3473a_ztz8mm_courpc.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/28fb2c5b-f57f-41f1-9448-97ed390ed1bb_zzyng3_mbhysp.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/06b8afe8-7dfd-4f69-8b21-1cb0eb3afd67_flhtmg_rgngyi.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/987ea3f6-6400-44fa-a636-098f800b98dd_rrn1cq_z5ytcv.webp"
-            ],
-            "amenities": [
-                "Courtyard view",
-                "Wifi",
-                "Free washer",
-                "Security cameras",
-                "Kitchen",
-                "EV charger"
-            ],
-            "reviews": [
-                {
-                    "name": "Andrea",
-                    "location": "Australia",
-                    "img": "",
-                    "rating": 5,
-                    "review": "As first time Paris-explorers, Bryan’s accommodation was perfect for our family of four (including two teens). Close to the glories of the Haussmann district and Gallery Lafayette,"
-                },
-                {
-                    "name": "Helen",
-                    "location": "USA",
-                    "img": "",
-                    "rating": 5,
-                    "review": "Absolutely love the stay. Bryan was a great host and communication was fantastic. Highly recommend."
-                }
-            ],
-            "current-bookings": [
-                {
-                    "start": "Nov 1, 2022",
-                    "end": "Nov 4, 2022"
-                }
-            ]
-        }
-    ],
-    "barcelona": [
-        {
-            "name": "Entire rental unit hosted by Ivana",
-            "tags": ["1 guest", "Studio", "1 bed", "1 bath"],
-            "price": "$100",
-            "description": "Studio of 25m2 in a secure building near the metro La Muette (line 9) and Boulainvilliers (rer c). Numerous buses nearby. Food and clothing shops (rue de Passy) The studio has all amenities. It is equipped with an oven, stove, fridge, dishwasher and washing machine. Towels, toiletries, linens and kitchenware are provided. A double bed with a beautiful Simmons mattress. Studio on course, very quiet.",
-            "images": [
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/4ad9de55-cab3-497f-8ce1-b99f893d3a1d_sfa060_oksmac.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/8f32a693-5c21-4da7-a5d8-f7f18428fcb4_mumcqx_ptimqq.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/f850be81-b989-45e1-87d3-9b413befb26f_jfvdr8_ci84we.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/633aad0e-cecf-4643-9f54-555c32f3f4ee_s8dsiq_w8swuc.webp"
-            ],
-            "amenities": [
-                "Kitchen",
-                "TV",
-                "Washer",
-                "Elevator",
-                "Wifi",
-                "Hair dryer"
-            ],
-            "reviews": [
-                {
-                    "name": "Laura",
-                    "location": "Spain",
-                    "img": "",
-                    "rating": 4,
-                    "review": "Communication with Ivana was easy and swift, the place is well-located, equipped and in good condition. Stayed for more than a week and had everything I needed for my stay."
-                },
-                {
-                    "name": "Izzet",
-                    "location": "Israel",
-                    "img": "",
-                    "rating": 4,
-                    "review": "Great communication with Ivana, nice place to stay for business trip. You can reach metro (line 9) in 30 meters. Kitchen was bien équipée and all cleaning items"
-                }
-            ],
-            "current-bookings": [
-                {
-                    "start": "Oct 2, 2022",
-                    "end": "Oct 7, 2022"
-                },
-                {
-                    "start": "Nov 14, 2022",
-                    "end": "Nov 19, 2022"
-                }
-            ]
-        }
-    ],
-    "jerusalem": [
-        {
-            "name": "Entire rental unit hosted by Ivana",
-            "tags": ["1 guest", "Studio", "1 bed", "1 bath"],
-            "price": "$100",
-            "description": "Studio of 25m2 in a secure building near the metro La Muette (line 9) and Boulainvilliers (rer c). Numerous buses nearby. Food and clothing shops (rue de Passy) The studio has all amenities. It is equipped with an oven, stove, fridge, dishwasher and washing machine. Towels, toiletries, linens and kitchenware are provided. A double bed with a beautiful Simmons mattress. Studio on course, very quiet.",
-            "images": [
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/4ad9de55-cab3-497f-8ce1-b99f893d3a1d_sfa060_oksmac.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/8f32a693-5c21-4da7-a5d8-f7f18428fcb4_mumcqx_ptimqq.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/f850be81-b989-45e1-87d3-9b413befb26f_jfvdr8_ci84we.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/633aad0e-cecf-4643-9f54-555c32f3f4ee_s8dsiq_w8swuc.webp"
-            ],
-            "amenities": [
-                "Kitchen",
-                "TV",
-                "Washer",
-                "Elevator",
-                "Wifi",
-                "Hair dryer"
-            ],
-            "reviews": [
-                {
-                    "name": "Laura",
-                    "location": "Spain",
-                    "img": "",
-                    "rating": 4,
-                    "review": "Communication with Ivana was easy and swift, the place is well-located, equipped and in good condition. Stayed for more than a week and had everything I needed for my stay."
-                },
-                {
-                    "name": "Izzet",
-                    "location": "Israel",
-                    "img": "",
-                    "rating": 4,
-                    "review": "Great communication with Ivana, nice place to stay for business trip. You can reach metro (line 9) in 30 meters. Kitchen was bien équipée and all cleaning items"
-                }
-            ],
-            "current-bookings": [
-                {
-                    "start": "Oct 2, 2022",
-                    "end": "Oct 7, 2022"
-                },
-                {
-                    "start": "Nov 14, 2022",
-                    "end": "Nov 19, 2022"
-                }
-            ]
-        },
-        {
-            "name": "Entire rental unit hosted by My Key",
-            "tags": ["4 guests", "1 bedroom", "2 beds", "1 bath"],
-            "price": "$200",
-            "description": "Welcome to my flat, completely renovated by an architect in February 2022 and located in the heart of the Marais in the Enfants Rouges district. You will be charmed by the location of this place, just a stone's throw from the rue de Bretagne and its historic Marché des Enfants Rouges. This lively district offers all the ideal conditions for a stay in our beautiful city of Paris. The space The 26m2 flat is composed of a living room with a sofa bed (140X200), a fully equipped open kitchen (ultra-quiet fridge-freezer, oven, induction hob, hood, dishwasher, coffee maker, toaster and kettle, as well as numerous cooking accessories), a sleeping area with a double bed separated from the rest of the flat by a glas roof, a dressing area and a walk-in shower with a separate toilet and washing machine. It has wifi (fibre). The welcome products (shower gel, shampoo), household linen and bath towels are provided and changed between each reservation.",
-            "images": [
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/2d2d7ec0-9674-45ea-9ea3-6ed57fabaa1f_jivh1h_br3wfq.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/f5d2142a-af9d-4fd6-85ce-ab4789a1fbaa_idt8ui_oshlqj.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/072e819d-cb7b-4905-925f-4130a34cb379_g3xn0l_sv5mqw.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/f5d2142a-af9d-4fd6-85ce-ab4789a1fbaa_idt8ui_oshlqj.webp"
-            ],
-            "amenities": [
-                "Courtyard view",
-                "Wifi",
-                "Free washer",
-                "Security cameras",
-                "Kitchen",
-                "EV charger"
-            ],
-            "reviews": [
-                {
-                    "name": "Karine",
-                    "location": "US",
-                    "img": "",
-                    "rating": 4.3,
-                    "review": "The location is perfect and the place has potential but it lacks of love and attention. The table is so wobbly it’s absolutely un-usable let alone"
-                },
-                {
-                    "name": "Teri",
-                    "location": "UK",
-                    "img": "",
-                    "rating": 4.9,
-                    "review": "The apartment is bright and very clean. Safe location."
-                }
-            ],
-            "current-bookings": [
-                {
-                    "start": "Nov 21, 2022",
-                    "end": "Nov 28, 2022"
-                }
-            ]
-        },
-        {
-            "name": "Opéra-Madeleine Parisian find",
-            "tags": ["4 guests", "1 bedroom", "1 bed", "1 bath"],
-            "price": "$330",
-            "description": "Nice apartment and bright fully equipped situated in the center of Paris, a few meters of the famous shops like Printemps, Galeries Lafayette, Channel, Hermes and main tourist points of Paris as the Opera Garnier, Madeleine, Concorde and the Jardin des Tulleries, The Louvre Museum and the famous Avenue des Champs Elysées.The space The apartment is located in the heart of Paris, it is completely equipped. Bed linen and towels are provided and you will have free access to a Wi-Fi connection.",
-            "images": [
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/e43811c3-2e7a-4530-b979-cfa5f4a73384_pwruer_m0ndke.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/8b2babce-5571-402a-b459-6a1051a1078b_djkdl1_zllqgu.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/1f4f5abc-0e4c-42a0-b3d1-37c0e027c327_tj9vme_lqcgkv.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/d6099f7c-3b94-4238-8852-09f7cf7919f9_yb8bvh_edt0ze.webp"
-            ],
-            "amenities": [
-                "Kitchen",
-                "HDTV",
-                "Refrigerator",
-                "Wifi",
-                "Hair dryer"
-            ],
-            "reviews": [
-                {
-                    "name": "Andrea",
-                    "location": "Australia",
-                    "img": "",
-                    "rating": 5,
-                    "review": "As first time Paris-explorers, Bryan’s accommodation was perfect for our family of four (including two teens). Close to the glories of the Haussmann district and Gallery Lafayette,"
-                },
-                {
-                    "name": "Helen",
-                    "location": "USA",
-                    "img": "",
-                    "rating": 5,
-                    "review": "Absolutely love the stay. Bryan was a great host and communication was fantastic. Highly recommend."
-                }
-            ],
-            "current-bookings": []
-        },
-        {
-            "name": "Unique studio near Galeries Lafayette",
-            "tags": ["2 guests", "Studio", "1 bed", "1 bath"],
-            "price": "$95",
-            "description": "In the heart of Paris, you will be captivated by the charm of this elegant and unique studio. Exceptionally located, near the Galeries Lafayette, Opéra Garnier and more! You will be able to experience Paris in a beautiful and magical way, in one of the most in-demand neighborhood. *Amazing* boulangeries, coffee places, restaurants are just around the corner and I will gladly advise you about it! I will provide the bed linen and towels for your stay",
-            "images": [
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/9b35e99d-2999-4f3f-9ccf-28fe06a3473a_ztz8mm_courpc.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/28fb2c5b-f57f-41f1-9448-97ed390ed1bb_zzyng3_mbhysp.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/06b8afe8-7dfd-4f69-8b21-1cb0eb3afd67_flhtmg_rgngyi.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/987ea3f6-6400-44fa-a636-098f800b98dd_rrn1cq_z5ytcv.webp"
-            ],
-            "amenities": [
-                "Courtyard view",
-                "Wifi",
-                "Free washer",
-                "Security cameras",
-                "Kitchen",
-                "EV charger"
-            ],
-            "reviews": [
-                {
-                    "name": "Andrea",
-                    "location": "Australia",
-                    "img": "",
-                    "rating": 5,
-                    "review": "As first time Paris-explorers, Bryan’s accommodation was perfect for our family of four (including two teens). Close to the glories of the Haussmann district and Gallery Lafayette,"
-                },
-                {
-                    "name": "Helen",
-                    "location": "USA",
-                    "img": "",
-                    "rating": 5,
-                    "review": "Absolutely love the stay. Bryan was a great host and communication was fantastic. Highly recommend."
-                }
-            ],
-            "current-bookings": [
-                {
-                    "start": "Nov 1, 2022",
-                    "end": "Nov 4, 2022"
-                }
-            ]
-        }
-    ],
-    "newyork": [
-        {
-            "name": "Entire rental unit hosted by Ivana",
-            "tags": ["1 guest", "Studio", "1 bed", "1 bath"],
-            "price": "$100",
-            "description": "Studio of 25m2 in a secure building near the metro La Muette (line 9) and Boulainvilliers (rer c). Numerous buses nearby. Food and clothing shops (rue de Passy) The studio has all amenities. It is equipped with an oven, stove, fridge, dishwasher and washing machine. Towels, toiletries, linens and kitchenware are provided. A double bed with a beautiful Simmons mattress. Studio on course, very quiet.",
-            "images": [
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/4ad9de55-cab3-497f-8ce1-b99f893d3a1d_sfa060_oksmac.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/8f32a693-5c21-4da7-a5d8-f7f18428fcb4_mumcqx_ptimqq.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/f850be81-b989-45e1-87d3-9b413befb26f_jfvdr8_ci84we.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/0/633aad0e-cecf-4643-9f54-555c32f3f4ee_s8dsiq_w8swuc.webp"
-            ],
-            "amenities": [
-                "Kitchen",
-                "TV",
-                "Washer",
-                "Elevator",
-                "Wifi",
-                "Hair dryer"
-            ],
-            "reviews": [
-                {
-                    "name": "Laura",
-                    "location": "Spain",
-                    "img": "",
-                    "rating": 4,
-                    "review": "Communication with Ivana was easy and swift, the place is well-located, equipped and in good condition. Stayed for more than a week and had everything I needed for my stay."
-                },
-                {
-                    "name": "Izzet",
-                    "location": "Israel",
-                    "img": "",
-                    "rating": 4,
-                    "review": "Great communication with Ivana, nice place to stay for business trip. You can reach metro (line 9) in 30 meters. Kitchen was bien équipée and all cleaning items"
-                }
-            ],
-            "current-bookings": [
-                {
-                    "start": "Oct 2, 2022",
-                    "end": "Oct 7, 2022"
-                },
-                {
-                    "start": "Nov 14, 2022",
-                    "end": "Nov 19, 2022"
-                }
-            ]
-        },
-        {
-            "name": "Entire rental unit hosted by My Key",
-            "tags": ["4 guests", "1 bedroom", "2 beds", "1 bath"],
-            "price": "$200",
-            "description": "Welcome to my flat, completely renovated by an architect in February 2022 and located in the heart of the Marais in the Enfants Rouges district. You will be charmed by the location of this place, just a stone's throw from the rue de Bretagne and its historic Marché des Enfants Rouges. This lively district offers all the ideal conditions for a stay in our beautiful city of Paris. The space The 26m2 flat is composed of a living room with a sofa bed (140X200), a fully equipped open kitchen (ultra-quiet fridge-freezer, oven, induction hob, hood, dishwasher, coffee maker, toaster and kettle, as well as numerous cooking accessories), a sleeping area with a double bed separated from the rest of the flat by a glas roof, a dressing area and a walk-in shower with a separate toilet and washing machine. It has wifi (fibre). The welcome products (shower gel, shampoo), household linen and bath towels are provided and changed between each reservation.",
-            "images": [
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/2d2d7ec0-9674-45ea-9ea3-6ed57fabaa1f_jivh1h_br3wfq.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/f5d2142a-af9d-4fd6-85ce-ab4789a1fbaa_idt8ui_oshlqj.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/072e819d-cb7b-4905-925f-4130a34cb379_g3xn0l_sv5mqw.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/1/f5d2142a-af9d-4fd6-85ce-ab4789a1fbaa_idt8ui_oshlqj.webp"
-            ],
-            "amenities": [
-                "Courtyard view",
-                "Wifi",
-                "Free washer",
-                "Security cameras",
-                "Kitchen",
-                "EV charger"
-            ],
-            "reviews": [
-                {
-                    "name": "Karine",
-                    "location": "US",
-                    "img": "",
-                    "rating": 4.3,
-                    "review": "The location is perfect and the place has potential but it lacks of love and attention. The table is so wobbly it’s absolutely un-usable let alone"
-                },
-                {
-                    "name": "Teri",
-                    "location": "UK",
-                    "img": "",
-                    "rating": 4.9,
-                    "review": "The apartment is bright and very clean. Safe location."
-                }
-            ],
-            "current-bookings": [
-                {
-                    "start": "Nov 21, 2022",
-                    "end": "Nov 28, 2022"
-                }
-            ]
-        },
-        {
-            "name": "Opéra-Madeleine Parisian find",
-            "tags": ["4 guests", "1 bedroom", "1 bed", "1 bath"],
-            "price": "$330",
-            "description": "Nice apartment and bright fully equipped situated in the center of Paris, a few meters of the famous shops like Printemps, Galeries Lafayette, Channel, Hermes and main tourist points of Paris as the Opera Garnier, Madeleine, Concorde and the Jardin des Tulleries, The Louvre Museum and the famous Avenue des Champs Elysées.The space The apartment is located in the heart of Paris, it is completely equipped. Bed linen and towels are provided and you will have free access to a Wi-Fi connection.",
-            "images": [
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/e43811c3-2e7a-4530-b979-cfa5f4a73384_pwruer_m0ndke.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/8b2babce-5571-402a-b459-6a1051a1078b_djkdl1_zllqgu.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/1f4f5abc-0e4c-42a0-b3d1-37c0e027c327_tj9vme_lqcgkv.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528933/hotel-app/paris/2/d6099f7c-3b94-4238-8852-09f7cf7919f9_yb8bvh_edt0ze.webp"
-            ],
-            "amenities": [
-                "Kitchen",
-                "HDTV",
-                "Refrigerator",
-                "Wifi",
-                "Hair dryer"
-            ],
-            "reviews": [
-                {
-                    "name": "Andrea",
-                    "location": "Australia",
-                    "img": "",
-                    "rating": 5,
-                    "review": "As first time Paris-explorers, Bryan’s accommodation was perfect for our family of four (including two teens). Close to the glories of the Haussmann district and Gallery Lafayette,"
-                },
-                {
-                    "name": "Helen",
-                    "location": "USA",
-                    "img": "",
-                    "rating": 5,
-                    "review": "Absolutely love the stay. Bryan was a great host and communication was fantastic. Highly recommend."
-                }
-            ],
-            "current-bookings": []
-        },
-        {
-            "name": "Unique studio near Galeries Lafayette",
-            "tags": ["2 guests", "Studio", "1 bed", "1 bath"],
-            "price": "$95",
-            "description": "In the heart of Paris, you will be captivated by the charm of this elegant and unique studio. Exceptionally located, near the Galeries Lafayette, Opéra Garnier and more! You will be able to experience Paris in a beautiful and magical way, in one of the most in-demand neighborhood. *Amazing* boulangeries, coffee places, restaurants are just around the corner and I will gladly advise you about it! I will provide the bed linen and towels for your stay",
-            "images": [
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/9b35e99d-2999-4f3f-9ccf-28fe06a3473a_ztz8mm_courpc.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/28fb2c5b-f57f-41f1-9448-97ed390ed1bb_zzyng3_mbhysp.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/06b8afe8-7dfd-4f69-8b21-1cb0eb3afd67_flhtmg_rgngyi.webp",
-                "https://res.cloudinary.com/dugybnapi/image/upload/v1666528932/hotel-app/paris/3/987ea3f6-6400-44fa-a636-098f800b98dd_rrn1cq_z5ytcv.webp"
-            ],
-            "amenities": [
-                "Courtyard view",
-                "Wifi",
-                "Free washer",
-                "Security cameras",
-                "Kitchen",
-                "EV charger"
-            ],
-            "reviews": [
-                {
-                    "name": "Andrea",
-                    "location": "Australia",
-                    "img": "",
-                    "rating": 5,
-                    "review": "As first time Paris-explorers, Bryan’s accommodation was perfect for our family of four (including two teens). Close to the glories of the Haussmann district and Gallery Lafayette,"
-                },
-                {
-                    "name": "Helen",
-                    "location": "USA",
-                    "img": "",
-                    "rating": 5,
-                    "review": "Absolutely love the stay. Bryan was a great host and communication was fantastic. Highly recommend."
-                }
-            ],
-            "current-bookings": [
-                {
-                    "start": "Nov 1, 2022",
-                    "end": "Nov 4, 2022"
-                }
-            ]
-        }
-    ],
-    "myuser": {
-        "name": "Jonathan Due",
-        "picsrc": "https://res.cloudinary.com/dugybnapi/image/upload/v1666873285/hotel-app/users/user_ff7xqp.png",
-        "location": "United State",
-        "joinedAt": "05.06.2022",
-        "email": "fake_email@gmail.com",
-        "password": "1111",
-        "address": "2445 Crosswind Drive",
-        "gender": "Male",
-        "birthday": "07.12.1995"
-    },
-    "mybookings": {
-        "bookingId": "9246940",
-        "checkin": "Dec 8, 2022",
-        "checkout": "Dec 12, 2022",
-        "price": " 1,950",
-        "title": "Baan Wanglang Riverside",
-        "location": "342 Soi Wat Rakang, Prannok Rd, Siriral, Bankoknoi, Bangkok,",
-        "orderDate": "April 8,2022",
-        "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-manuel-joseph-19872_qclbdo_xtuqyq.jpg"
     }
 }
