@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { BsGoogle } from "react-icons/bs";
-import { FaFacebookF, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { signIn } from "next-auth/react";
 

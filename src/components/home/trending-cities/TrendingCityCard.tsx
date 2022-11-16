@@ -1,5 +1,5 @@
 import React from "react";
-import { TrendingCity } from "./useTrendingCities";
+import { TrendingCity } from "./TrendingCitiesSection";
 import Image from "next/image";
 import { AiFillStar } from "react-icons/ai";
 

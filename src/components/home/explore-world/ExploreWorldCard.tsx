@@ -1,8 +1,8 @@
-import { ExploreWorld } from "./useExploreWorld";
 import Image from "next/image";
 import { AiFillStar } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaHotel } from "react-icons/fa";
+import { ExploreWorld } from "./ExploreWorldSection";
 
 function ExploreWorldCard({
     title,
