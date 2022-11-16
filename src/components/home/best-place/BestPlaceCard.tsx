@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { BestPlace } from "./useBestPlace";
+import { BestPlace } from "./BestPlacesSection";
 
 function BestPlaceCard({ img, country, destinations }: BestPlace) {
     return (
