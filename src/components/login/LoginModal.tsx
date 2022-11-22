@@ -21,7 +21,7 @@ export default function LoginModal({
             onClick={() => setModalState("closed")}
         >
             <div
-                className="relative w-1/2 md:w-1/3"
+                className="relative w-10/12 sm:w-4/5 md:w-3/5 lg:w-1/2 lg:max-w-xl"
                 onClick={(e) => {
                     e.stopPropagation();
                 }}

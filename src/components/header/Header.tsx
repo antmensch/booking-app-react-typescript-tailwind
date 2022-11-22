@@ -20,7 +20,6 @@ interface HeaderProps {
 
 function Header({ colorTheme, setColorTheme }: HeaderProps) {
     const router = useRouter();
-    // fetching user data using the useUser custom hook
 
     const { data: session, status } = useSession();
     function handleLoginClick() {

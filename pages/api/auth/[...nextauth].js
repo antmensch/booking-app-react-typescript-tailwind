@@ -31,7 +31,6 @@ export default NextAuth({
                 const user = await db
                     .collection("users")
                     .findOne({ email: credentials.email });
-                console.log(user);
                 if (
                     credentials.email === user.email &&
                     credentials.password === user.password
