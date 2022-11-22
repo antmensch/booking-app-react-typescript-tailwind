@@ -35,9 +35,6 @@ export async function getStaticProps(context: NextPageContext) {
         return result;
     }
 
-    const homePageData = await getHomePageData().then((result) => result?.data);
-    console.log(homePageData);
-
     // TODO: FIX THIS!!!
     if (true)
         return {
@@ -236,7 +233,7 @@ export async function getStaticProps(context: NextPageContext) {
                 ],
             },
         };
-
+    /*
     const featuredDestinations: FeaturedDestination[] =
         homePageData["featured-destination"];
 
@@ -257,6 +254,7 @@ export async function getStaticProps(context: NextPageContext) {
             trendingCities,
         },
     };
+    */
 }
 
 export default function Home({
