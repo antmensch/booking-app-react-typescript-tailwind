@@ -24,6 +24,7 @@ import {
 } from "../src/components/home/featured-destinations/FeaturedDestinationsSection";
 import clientPromise from "../src/utils/mongodb/mongodb";
 import { ObjectId } from "mongodb";
+import SearchForm from "../src/components/search/SearchForm";
 
 export async function getStaticProps(context: NextPageContext) {
     const dbClient = await clientPromise;
@@ -101,9 +102,15 @@ export default function Home({
                         </div>
                     </div>
                 </section>
+                {/* Search Form */}
+                <section>
+                    <div className="container relative -top-52 mx-auto h-0 md:-top-28">
+                        <SearchForm />
+                    </div>
+                </section>
 
                 {/* Best Places Section */}
-                <section className="bg-lightGray-700 pt-10 dark:bg-darkGray-200">
+                <section className="bg-lightGray-700 pt-40 dark:bg-darkGray-200 md:pt-32">
                     <div className="container mx-auto">
                         <h2 className="mx-auto w-full px-16 text-center text-3xl font-bold text-darkGray-400 dark:text-white md:px-0 md:text-5xl">
                             Search the best place in the world
