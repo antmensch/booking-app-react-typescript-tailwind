@@ -24,226 +24,36 @@ import {
 } from "../src/components/home/featured-destinations/FeaturedDestinationsSection";
 import clientPromise from "../src/utils/mongodb/mongodb";
 import { ObjectId } from "mongodb";
+import SearchForm from "../src/components/search/SearchForm";
 
 export async function getStaticProps(context: NextPageContext) {
+    const dbClient = await clientPromise;
+    const db = dbClient.db("test");
+
     async function getHomePageData() {
-        const dbClient = await clientPromise;
-        const db = dbClient.db();
         const result = await db
             .collection("homepage")
-            .findOne({ _id: new ObjectId("6375474f1407ffcb74430804") });
+            .findOne({ _id: new ObjectId("637c8ef0c7d1cf631c356464") })
+            .then((data) => {
+                const homeData = data?.data;
+                if (typeof homeData === "string") return JSON.parse(homeData);
+                return {};
+            });
         return result;
     }
 
-    // TODO: FIX THIS!!!
-    if (true)
-        return {
-            props: {
-                bestPlace: [
-                    {
-                        country: "China",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-manuel-joseph-19872_qclbdo_xtuqyq.jpg",
-                        destinations: 86,
-                    },
-                    {
-                        country: "India",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-darshak-pandya-574313_ykrw9c_uyprf9.jpg",
-                        destinations: 98,
-                    },
-                    {
-                        country: "Maldivies",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-asad-photo-maldives-1483053_ic6pbi_wezb3s.jpg",
-                        destinations: 132,
-                    },
-                    {
-                        country: "Israel",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-mauricio-artieda-610533_hxpgok_xh0jak.jpg",
-                        destinations: 72,
-                    },
-                    {
-                        country: "France",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-pixabay-2363_pqxtxj_xemtvd.jpg",
-                        destinations: 201,
-                    },
-                    {
-                        country: "Morocco",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666359667/hotel-app/best-place/pexels-pixabay-273935_xseyqa_afwne7.jpg",
-                        destinations: 66,
-                    },
-                    {
-                        country: "Brazil",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-florencia-potter-351283_u9r32s_clgznt.jpg",
-                        destinations: 139,
-                    },
-                    {
-                        country: "Egypt",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-david-mceachan-71241_ojwpwd_hakrvn.jpg",
-                        destinations: 48,
-                    },
-                ],
-                featuredDestinations: [
-                    {
-                        city: "Barcelona",
-                        country: "Spain",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-aleksandar-pasaric-1388030_jalzsm_al2c9r.jpg",
-                        rating: 4.1,
-                        activities: 250,
-                    },
-                    {
-                        city: "Sydney ",
-                        country: "Australia",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-patrick-mclachlan-995765_nakswl_bmgkrt.jpg",
-                        rating: 4.5,
-                        activities: 124,
-                    },
-                    {
-                        city: "London",
-                        country: "UK",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-chris-schippers-427679_rqchvp_vueawc.jpg",
-                        rating: 4.0,
-                        activities: 299,
-                    },
-                    {
-                        city: "Paris",
-                        country: "France",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528926/hotel-app/featured-destinations/pexels-chris-molloy-1308940_vecke4_lvdi33.jpg",
-                        rating: 4.2,
-                        activities: 179,
-                    },
-                    {
-                        city: "Tokyo",
-                        country: "Japan",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528928/hotel-app/featured-destinations/pexels-aleksandar-pasaric-2506923_szxh0t_qmnszk.jpg",
-                        rating: 4.8,
-                        activities: 160,
-                    },
-                    {
-                        city: "Hanoi",
-                        country: "Vietnam",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528928/hotel-app/featured-destinations/pexels-huy-phan-1437618_li5ydp_itlkoe.jpg",
-                        rating: 4.5,
-                        activities: 210,
-                    },
-                ],
-                topTour: [
-                    {
-                        country: "Japan",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-belle-co-402028_ipui4w_ybe88g.jpg",
-                        place: "Japan",
-                        placesQty: 10,
-                    },
-                    {
-                        country: "Bali",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-kimberly-mcneilus-2480626_eb5zha_nmzi4h.jpg",
-                        place: "Indonesia",
-                        placesQty: 7,
-                    },
-                    {
-                        country: "Spain",
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528936/hotel-app/top-tour/pexels-samuel-sweet-6145647_hwigz4_elkxps.jpg",
-                        place: "Barcelona",
-                        placesQty: 19,
-                    },
-                ],
-                exploreWorld: [
-                    {
-                        title: "Comfort Space",
-                        city: "Marmaris",
-                        country: "Turkey",
-                        price: 220,
-                        "distance-from-city-center": "1.2 km",
-                        rating: 4.7,
-                        "amount-of-rating": 150,
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-binyamin-mellish-106399_icqiwy_vddtbg.jpg",
-                    },
-                    {
-                        title: "Comfort Space",
-                        city: "Paris",
-                        country: "France",
-                        price: 110,
-                        "distance-from-city-center": "3 km",
-                        rating: 5,
-                        "amount-of-rating": 150,
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-binyamin-mellish-1396122_prtue5_uhtvwj.jpg",
-                    },
-                    {
-                        title: "Comfort Space",
-                        city: "Madrid",
-                        country: "Spain",
-                        price: 300,
-                        "distance-from-city-center": "0.6 km",
-                        rating: 4.5,
-                        "amount-of-rating": 150,
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-binyamin-mellish-186077_cbirbs_ncjpt0.jpg",
-                    },
-                    {
-                        title: "Comfort Space",
-                        city: "Jerusalem",
-                        country: "Israel",
-                        price: 400,
-                        "distance-from-city-center": "0.1 km",
-                        rating: 4.3,
-                        "amount-of-rating": 150,
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-expect-best-323780_dk5hki_hrlmks.jpg",
-                    },
-                ],
-                trendingCities: [
-                    {
-                        city: "Manila",
-                        price: 220,
-                        rating: 5,
-                        "amount-of-rating": 150,
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528939/hotel-app/trending-cities/pexels-pixabay-210367_nbupkd_bphzhq.jpg",
-                    },
-                    {
-                        city: "Frankfurt am Main",
-                        price: 340,
-                        rating: 4.4,
-                        "amount-of-rating": 12,
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528939/hotel-app/trending-cities/pexels-bruno-gla%CC%88tsch-1398003_hgtd8g_lywqss.jpg",
-                    },
-                    {
-                        city: "San Francisco",
-                        price: 105,
-                        rating: 5,
-                        "amount-of-rating": 98,
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528939/hotel-app/trending-cities/pexels-pixabay-208745_uaspib_gjdfio.jpg",
-                    },
-                    {
-                        city: "Washington",
-                        price: 460,
-                        rating: 4.8,
-                        "amount-of-rating": 221,
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528939/hotel-app/trending-cities/pexels-samad-ismayilov-739047_v8kum0_okrz5b.jpg",
-                    },
-                    {
-                        city: "Seattle",
-                        price: 210,
-                        rating: 4.5,
-                        "amount-of-rating": 1002,
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528940/hotel-app/trending-cities/pexels-josh-fields-3964406_gjxosa_f8yv3q.jpg",
-                    },
-                    {
-                        city: "Stockholm",
-                        price: 130,
-                        rating: 4.2,
-                        "amount-of-rating": 99,
-                        img: "https://res.cloudinary.com/dugybnapi/image/upload/v1666528940/hotel-app/trending-cities/pexels-pixabay-33612_km1qos_zog5kf.jpg",
-                    },
-                ],
-            },
-        };
-    /*
+    const homePageData = await getHomePageData();
+
     const featuredDestinations: FeaturedDestination[] =
-        homePageData["featured-destination"];
+        homePageData.featuredDestinations;
 
-    const bestPlace: BestPlace[] = homePageData["best-place"];
+    const bestPlace: BestPlace[] = homePageData.bestPlace;
 
-    const topTour: TopTour[] = homePageData["top-tour"];
+    const topTour: TopTour[] = homePageData.topTour;
 
-    const exploreWorld: ExploreWorld[] = homePageData["explore-world"];
+    const exploreWorld: ExploreWorld[] = homePageData.exploreWorld;
 
-    const trendingCities: TrendingCity[] = homePageData["trending-cities"];
+    const trendingCities: TrendingCity[] = homePageData.trendingCities;
 
     return {
         props: {
@@ -264,7 +74,6 @@ export default function Home({
     exploreWorld,
     trendingCities,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-    console.log(featuredDestinations);
     return (
         <div className="flex min-h-screen">
             <Head>
@@ -294,9 +103,15 @@ export default function Home({
                         </div>
                     </div>
                 </section>
+                {/* Search Form */}
+                <section>
+                    <div className="container relative -top-52 mx-auto h-0 md:-top-28">
+                        <SearchForm />
+                    </div>
+                </section>
 
                 {/* Best Places Section */}
-                <section className="bg-lightGray-700 pt-10 dark:bg-darkGray-200">
+                <section className="bg-lightGray-700 pt-40 dark:bg-darkGray-200 md:pt-32">
                     <div className="container mx-auto">
                         <h2 className="mx-auto w-full px-16 text-center text-3xl font-bold text-darkGray-400 dark:text-white md:px-0 md:text-5xl">
                             Search the best place in the world

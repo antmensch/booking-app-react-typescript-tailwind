@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { BsGoogle } from "react-icons/bs";
-import { FaFacebookF, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 function SignupForm() {
@@ -20,6 +20,12 @@ function SignupForm() {
             ...signupData,
             [e.target.id]: e.target.value,
         });
+    }
+
+    async function handleSignupButtonClick(e: any) {
+        e.preventDefault();
+        console.log("signup button clicked");
+        console.log(signupData);
     }
 
     return (
@@ -139,7 +145,10 @@ function SignupForm() {
                     </Link>
                 </label>
             </div>
-            <button className="text-md w-full rounded-lg bg-blue-accent py-3 font-bold text-white hover:bg-blue-dark md:text-xl">
+            <button
+                className="text-md w-full rounded-lg bg-blue-accent py-3 font-bold text-white hover:bg-blue-dark md:text-xl"
+                onClick={(e) => handleSignupButtonClick(e)}
+            >
                 Signup
             </button>
             <div className="text-center text-2xs font-normal text-darkGray-600 dark:text-lightGray-400 md:text-sm">

@@ -7,7 +7,10 @@ import { signIn } from "next-auth/react";
 
 function LoginForm() {
     const [passVisible, setPassVisible] = useState(false);
-    const [loginData, setLoginData] = useState({ email: "", password: "" });
+    const [loginData, setLoginData] = useState({
+        email: "example@test.com",
+        password: "1111",
+    });
 
     return (
         <form className="mx-auto h-auto min-h-min w-full space-y-3 overflow-scroll rounded-3xl bg-white px-11 py-7 dark:bg-darkGray-200">

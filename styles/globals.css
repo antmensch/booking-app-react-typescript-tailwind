@@ -4,6 +4,14 @@
 
 /* Dark mode toggler styles. Label width (64px), height (24px) and other styles are defined in main component*/
 
+@layer base {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 @layer components {
     .cta {
         background-image: url("../src/img/cta-bg-1.png"),
@@ -13,7 +21,7 @@
     }
 
     .input-text {
-        @apply mt-1 rounded-lg bg-lightGray-400 px-3 py-2 text-lightGray-100 dark:bg-darkGray-300 md:mt-2;
+        @apply mt-1 rounded-lg bg-lightGray-400 px-3 py-2 text-lightGray-100 dark:bg-darkGray-300;
     }
 }
 
