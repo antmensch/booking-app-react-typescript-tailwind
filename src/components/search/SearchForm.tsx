@@ -28,9 +28,9 @@ export default function SearchForm() {
             <form className="flex flex-col px-5">
                 <div className="flex flex-row items-center border-b-1 border-lightGray-400 p-5 dark:border-darkGray-600 dark:text-lightGray-500">
                     <MdHotel />
-                    <span className="ml-2 text-sm text-black">Hotel</span>
+                    <span className="ml-2 text-sm">Hotel</span>
                     <select
-                        className="ml-2 cursor-pointer focus:outline-none dark:bg-darkGray-300"
+                        className="ml-2 cursor-pointer bg-white focus:outline-none dark:bg-darkGray-300"
                         name="guestsQty"
                         id="guestsQty"
                         onChange={(e) => {
