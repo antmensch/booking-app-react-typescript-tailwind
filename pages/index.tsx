@@ -64,7 +64,6 @@ export async function getStaticProps(context: NextPageContext) {
             trendingCities,
         },
     };
-    */
 }
 
 export default function Home({
