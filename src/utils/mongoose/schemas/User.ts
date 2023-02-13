@@ -1,4 +1,7 @@
 import mongoose from "mongoose";
+import useMongoose from "../mongoose";
+
+useMongoose();
 
 const userSchema = new mongoose.Schema({
     name: String,

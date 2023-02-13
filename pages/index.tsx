@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Footer from "../src/components/footer/Footer";
+import { useSession } from "next-auth/react";
 import {
     BestPlacesSection,
     BestPlace,
@@ -73,6 +74,7 @@ export default function Home({
     exploreWorld,
     trendingCities,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+    const { data: session, status } = useSession();
     return (
         <div className="flex min-h-screen">
             <Head>
@@ -103,14 +105,20 @@ export default function Home({
                     </div>
                 </section>
                 {/* Search Form */}
-                <section>
-                    <div className="container relative -top-52 mx-auto h-0 md:-top-28">
-                        <SearchForm />
-                    </div>
-                </section>
+                {status === "authenticated" && (
+                    <section>
+                        <div className="container relative -top-52 mx-auto h-0 md:-top-28">
+                            <SearchForm />
+                        </div>
+                    </section>
+                )}
 
                 {/* Best Places Section */}
-                <section className="bg-lightGray-700 pt-40 dark:bg-darkGray-200 md:pt-32">
+                <section
+                    className={`bg-lightGray-700 pt-${
+                        status === "authenticated" ? "52" : "10"
+                    } dark:bg-darkGray-200 md:pt-32`}
+                >
                     <div className="container mx-auto">
                         <h2 className="mx-auto w-full px-16 text-center text-3xl font-bold text-darkGray-400 dark:text-white md:px-0 md:text-5xl">
                             Search the best place in the world
