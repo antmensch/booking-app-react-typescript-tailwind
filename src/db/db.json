@@ -1,5 +1,5 @@
-{
-    "data": {
+[
+    {
         "best-place": [
             {
                 "country": "China",
@@ -41,7 +41,9 @@
                 "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-david-mceachan-71241_ojwpwd_hakrvn.jpg",
                 "destinations": 48
             }
-        ],
+        ]
+    },
+    {
         "featured-destinations": [
             {
                 "city": "Barcelona",
@@ -85,7 +87,9 @@
                 "rating": 4.5,
                 "activities": 210
             }
-        ],
+        ]
+    },
+    {
         "top-tour": [
             {
                 "country": "Japan",
@@ -105,7 +109,9 @@
                 "place": "Barcelona",
                 "placesQty": 19
             }
-        ],
+        ]
+    },
+    {
         "explore-world": [
             {
                 "title": "Comfort Space",
@@ -147,7 +153,9 @@
                 "amount-of-rating": 150,
                 "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528923/hotel-app/explore-world/pexels-expect-best-323780_dk5hki_hrlmks.jpg"
             }
-        ],
+        ]
+    },
+    {
         "trending-cities": [
             {
                 "city": "Manila",
@@ -191,13 +199,12 @@
                 "amount-of-rating": 99,
                 "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666528940/hotel-app/trending-cities/pexels-pixabay-33612_km1qos_zog5kf.jpg"
             }
-        ],
-        "supported-destinations": [
-            "paris",
-            "barcelona",
-            "jerusalem",
-            "newyork"
-        ],
+        ]
+    },
+    {
+        "supported-destinations": ["paris", "barcelona", "jerusalem", "newyork"]
+    },
+    {
         "paris": [
             {
                 "name": "Entire rental unit hosted by Ivana",
@@ -365,7 +372,9 @@
                     }
                 ]
             }
-        ],
+        ]
+    },
+    {
         "barcelona": [
             {
                 "name": "Entire rental unit hosted by Ivana",
@@ -413,7 +422,9 @@
                     }
                 ]
             }
-        ],
+        ]
+    },
+    {
         "jerusalem": [
             {
                 "name": "Entire rental unit hosted by Ivana",
@@ -581,7 +592,9 @@
                     }
                 ]
             }
-        ],
+        ]
+    },
+    {
         "newyork": [
             {
                 "name": "Entire rental unit hosted by Ivana",
@@ -749,7 +762,9 @@
                     }
                 ]
             }
-        ],
+        ]
+    },
+    {
         "myuser": {
             "name": "Jonathan Due",
             "picsrc": "https://res.cloudinary.com/dugybnapi/image/upload/v1666873285/hotel-app/users/user_ff7xqp.png",
@@ -760,7 +775,9 @@
             "address": "2445 Crosswind Drive",
             "gender": "Male",
             "birthday": "07.12.1995"
-        },
+        }
+    },
+    {
         "mybookings": {
             "bookingId": "9246940",
             "checkin": "Dec 8, 2022",
@@ -772,4 +789,4 @@
             "img": "https://res.cloudinary.com/dugybnapi/image/upload/v1666359666/hotel-app/best-place/pexels-manuel-joseph-19872_qclbdo_xtuqyq.jpg"
         }
     }
-}
+]

@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 /* Dark mode toggler styles. Label width (64px), height (24px) and other styles are defined in main component*/
-
 @layer base {
+    @import "react-datepicker/dist/react-datepicker.css";
+
     * {
         box-sizing: border-box;
         margin: 0;
